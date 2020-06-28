@@ -12,6 +12,34 @@ body {
   background-color: #FFFEF6;
 }
 
+#mainNav .navbar-nav > li > a:hover,
+#mainNav .navbar-nav > li > a:focus:hover {
+  color: #589BFF;
+}
+
+#mainNav.navbar-shrink {
+  border-color: rgba(34, 34, 34, 0.1);
+  background-color: white;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  color: #222222;
+}
+
+#mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+  color: #589BFF;
+}
+
+#mainNav.navbar-shrink .navbar-nav > li > a,
+#mainNav.navbar-shrink .navbar-nav > li > a:focus {
+  color: #222222;
+}
+
+#mainNav.navbar-shrink .navbar-nav > li > a:hover,
+#mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+  color: #589BFF;
+}
+
 @media (max-width: 1200px) {
   header {
     padding-top: 30px;
@@ -37,6 +65,7 @@ body {
 .line {
   position: fixed;
   bottom: 40px;
+  z-index: 30;
 }
 
 .line span {
@@ -46,6 +75,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #D4CCBF;
+  transition: color .3s ease-in;
   display: block;
   position: absolute;
 }
@@ -56,10 +86,14 @@ body {
   }
 }
 
+.line .act {
+  color: #BEA468;
+  transition: color .3s ease-in;
+}
+
 .line .vision {
   top: -20px;
   right: -70px;
-  color: #BEA468;
 }
 
 .line .tummo {

@@ -33,10 +33,20 @@
     <script src='libs/anime.min.js'></script>
     <!-- ANIME -->
 
+    <!-- PLUGIN JAVASCRIPT -->
+    <script src="libs/jquery.easing.min.js"></script>
+    <!-- PLUGIN JAVASCRIPT -->
+
+    <!-- SCROLLMAGIC -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- SCROLLMAGIC -->
+
+
 </head>
 <body>
 
-    <header>
+    <header id='hero'>
         <nav>
             <div class="container-md ">
                 <div class="row justify-content-between align-items-center">
@@ -57,12 +67,12 @@
         <div class="container-md">
             <div class="row">
                 <div class="col-2 hero__line">
-                    <div class="line">
-                        <span class="vision">Vision</span>
-                        <span class="tummo">Tummo World</span>
-                        <span class="art">Jewellery as Art</span>
-                        <span class="silk">Petite silk Bags</span>
-                        <span class="gallery">Aesthetics gallery</span>
+                    <div class="line" id='mainNav'>
+                        <a class='js-scroll-trigger' href="#hero"><span class="vision act">Vision</span></a>
+                        <a class='js-scroll-trigger' href="#world"><span class="tummo">Tummo World</span></a>
+                        <a class='js-scroll-trigger' href=""><span class="art">Jewellery as Art</span></a>
+                        <a class='js-scroll-trigger' href=""><span class="silk">Petite silk Bags</span></a>
+                        <a class='js-scroll-trigger' href=""><span class="gallery">Aesthetics gallery</span></a>
                         <img id='line' src="img/line 1.svg" alt="">
                     </div>
                 </div>
@@ -76,7 +86,7 @@
 
     </section>
 
-    <section class='world'>
+    <section id='world' class='world'>
 
         <div class="container-md">
             <div class="row">
@@ -94,5 +104,7 @@
     </section>
     
     <script src='js/main.js'></script>
+    <script src='js/scroll.js'></script>
+    <script src='js/scrollmagic.js'></script>
 </body>
 </html>

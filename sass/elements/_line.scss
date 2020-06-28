@@ -3,6 +3,8 @@
 .line{
     position: fixed;
     bottom: 40px;
+
+    z-index: 30;
     span{
         @include Krona;
         display: block;
@@ -10,10 +12,13 @@
 
     }
 
+    .act{
+        @include active-link;
+    }
+
     .vision{
         top: -20px;
         right: -70px;
-        color: #BEA468;
     }
 
     .tummo{
