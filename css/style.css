@@ -119,7 +119,7 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Krona One', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 72px;
@@ -178,7 +178,7 @@ body {
 
 @media (max-width: 1200px) {
   .hero h1 {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 72px;
