@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin Krona{
     font-family: 'Krona One', sans-serif;
     font-style: normal;
@@ -11,15 +13,17 @@
 }
 
 @mixin KronaGiant{
-    // font-family: 'Krona One', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Krona One', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 82px;
+    font-size: 72px;
     line-height: 90px;
-    width: 643px;
+    width: 843px;
     letter-spacing: 6px;
     color: #715841;
+    // border: 2px solid #FFFEF6;
+    // text-shadow: $text-shadow;
     @media screen and (max-width: 1200px){
         font-weight: 300;
         font-size: 60px;

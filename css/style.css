@@ -119,12 +119,12 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Krona One', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 82px;
+  font-size: 72px;
   line-height: 90px;
-  width: 643px;
+  width: 843px;
   letter-spacing: 6px;
   color: #715841;
   top: 76px;
@@ -178,12 +178,12 @@ body {
 
 @media (max-width: 1200px) {
   .hero h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Krona One', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 82px;
+    font-size: 72px;
     line-height: 90px;
-    width: 643px;
+    width: 843px;
     letter-spacing: 6px;
     color: #715841;
     top: 65px;
