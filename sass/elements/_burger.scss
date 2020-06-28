@@ -1,0 +1,14 @@
+.burger{
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    span{
+        width: 40px;
+        height: 2px;
+        display: block;
+        background: #BEA468;
+        color: #BEA468;
+        border-radius: 5px;
+    }
+}

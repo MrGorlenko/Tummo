@@ -1,0 +1,43 @@
+@import '../mixins';
+
+.hero{
+    &__line{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    h1{
+        @include KronaGiant;
+        top: 76px;
+        left: 278px;
+        position: absolute;
+    }
+
+    button{
+        @include button;
+        @include Roboto-regular;
+
+        position: absolute;
+        left: 495px;
+        top: 390px;
+    }
+}
+
+@media (max-width: 1200px){
+    .hero{
+        h1{
+            @include KronaGiant;
+           top: 65px;
+           left: 290px;
+        }
+
+        button{
+            left: 400px;
+        }
+
+        & .bird{
+            width: 400px;
+        }
+    }
+}

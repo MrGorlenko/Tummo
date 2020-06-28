@@ -1,0 +1,76 @@
+@import '../mixins';
+
+.line{
+    position: relative;
+    span{
+        @include Krona;
+        display: block;
+        position: absolute;
+
+    }
+
+    .vision{
+        top: -20px;
+        right: -70px;
+        color: #BEA468;
+    }
+
+    .tummo{
+        left: -95px;
+        top: 75px;
+        width: 100px;
+    }
+
+    .art{
+        left: 75px;
+        top: 120px;
+    }
+
+    .silk{
+        top: 190px;
+        left: -95px;
+        width: 100px;
+    }
+
+    .gallery{
+        bottom: 5px;
+        left: 75px;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .line{
+        img{
+            width: 60px;
+            height: 300px;
+        }
+
+        .vision{
+            top: 0px;
+            right: -70px;
+        }
+
+        .tummo{
+            left: -80px;
+            top: 80px;
+            width: 100px;
+        }
+    
+        .art{
+            left: 75px;
+            top: 120px;
+        }
+    
+        .silk{
+            top: 175px;
+            left: -80px;
+            width: 85px;
+        }
+    
+        .gallery{
+            bottom: 5px;
+            left: 75px;
+        }
+    }
+}
