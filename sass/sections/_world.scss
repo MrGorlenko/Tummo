@@ -1,0 +1,45 @@
+@import '../mixins';
+
+.world{
+    
+    h2{
+        @include KronaGiant;
+        position: absolute;
+        left: 390px;
+        top:85px;
+
+    }
+
+    p{
+        @include paragraph;
+        width: 550px;
+        position: absolute;
+        left: 360px;
+        top: 215px;
+    }
+}
+
+@media (max-width: 1500px){
+    .world{
+        h2{
+            left: 310px;
+        }
+        p{
+            left: 280px;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .world{
+        h2{
+            left: 300px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            width: 445px;
+        }
+    }
+}

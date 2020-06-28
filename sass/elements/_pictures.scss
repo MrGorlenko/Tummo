@@ -1,0 +1,40 @@
+.pictures{
+    position: relative;
+
+    & .fractals{
+        position: absolute;
+        bottom: 75px;
+        left: -435px;
+    }
+}
+
+@media (max-width: 1500px){
+    .pictures{
+        img:first-child{
+            width: 100%;
+        }
+
+        & .fractals{
+            width: 400px;
+            left: -290px;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .pictures{
+        height: 500px;
+        img:first-child{
+            width: 80%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        & .fractals{
+            bottom: 0;
+            width: 300px;
+            left: -190px;
+        }
+    }
+}

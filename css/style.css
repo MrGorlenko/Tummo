@@ -35,7 +35,8 @@ body {
 }
 
 .line {
-  position: relative;
+  position: fixed;
+  bottom: 40px;
 }
 
 .line span {
@@ -109,6 +110,47 @@ body {
   .line .gallery {
     bottom: 5px;
     left: 75px;
+  }
+}
+
+.description {
+  position: relative;
+}
+
+.pictures {
+  position: relative;
+}
+
+.pictures .fractals {
+  position: absolute;
+  bottom: 75px;
+  left: -435px;
+}
+
+@media (max-width: 1500px) {
+  .pictures img:first-child {
+    width: 100%;
+  }
+  .pictures .fractals {
+    width: 400px;
+    left: -290px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pictures {
+    height: 500px;
+  }
+  .pictures img:first-child {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .pictures .fractals {
+    bottom: 0;
+    width: 300px;
+    left: -190px;
   }
 }
 
@@ -207,6 +249,70 @@ body {
   }
   .hero .bird {
     width: 400px;
+  }
+}
+
+.world h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 90px;
+  width: 843px;
+  letter-spacing: 6px;
+  color: #715841;
+  position: absolute;
+  left: 390px;
+  top: 85px;
+}
+
+@media screen and (max-width: 1200px) {
+  .world h2 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    width: 468px;
+    letter-spacing: 0px;
+  }
+}
+
+.world p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+  color: #715841;
+  width: 550px;
+  position: absolute;
+  left: 360px;
+  top: 215px;
+}
+
+@media screen and (max-width: 1500px) {
+  .world p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .world h2 {
+    left: 310px;
+  }
+  .world p {
+    left: 280px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .world h2 {
+    left: 300px;
+  }
+  .world p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 445px;
   }
 }
 /*# sourceMappingURL=style.css.map */
