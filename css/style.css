@@ -544,6 +544,9 @@ body {
 }
 
 @media (max-width: 1350px) {
+  .silk {
+    margin-bottom: 155px;
+  }
   .silk .content h2 {
     left: 280px;
     top: 70px;
