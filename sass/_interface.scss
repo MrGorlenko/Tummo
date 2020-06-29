@@ -1,3 +1,5 @@
+@import 'mixins';
+
 @media (min-width: 1500px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1440px;
@@ -12,27 +14,26 @@ body{
     background-color: #FFFEF6;;
 }
 
-#mainNav .navbar-nav > li > a:hover,
-#mainNav .navbar-nav > li > a:focus:hover {
-  color: #589BFF;
+.title{
+  @include KronaGiant;
 }
-#mainNav.navbar-shrink {
-  border-color: rgba(34, 34, 34, 0.1);
-  background-color: white;
+
+.paragraph{
+  @include paragraph;
 }
-#mainNav.navbar-shrink .navbar-brand {
-  color: #222222;
+
+.button{
+  @include button;
+  @include Roboto-regular;
 }
-#mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-  color: #589BFF;
+
+.line-hidden{
+  @include line-hidden;
 }
-#mainNav.navbar-shrink .navbar-nav > li > a,
-#mainNav.navbar-shrink .navbar-nav > li > a:focus {
-  color: #222222;
-}
-#mainNav.navbar-shrink .navbar-nav > li > a:hover,
-#mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-  color: #589BFF;
+
+.content{
+  padding: 0;
+  position: relative;
 }
 
 @media (max-width: 1200px){

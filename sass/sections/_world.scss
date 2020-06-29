@@ -3,7 +3,6 @@
 .world{
     
     h2{
-        @include KronaGiant;
         position: absolute;
         left: 390px;
         top:85px;
@@ -11,7 +10,6 @@
     }
 
     p{
-        @include paragraph;
         width: 550px;
         position: absolute;
         left: 360px;

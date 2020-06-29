@@ -1,0 +1,115 @@
+.art{
+
+    margin-bottom: 220px;
+
+    & .content{
+
+        h2, p, button , .fractal{
+            position: absolute;
+        }
+
+    }
+    & .content-1{
+
+        
+        h2{
+            top: 56px;
+            left: 213px;
+        }
+
+        p{
+            top: 225px;
+            left: 542px;
+            width: 515px;
+        }
+
+        button{
+            top: 455px;
+            left: 360px;
+        }
+
+        .fractal{
+            bottom: -220px;
+            left: 320px;
+        }
+    }
+
+    & .content-2{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -100px;
+
+        p{
+            right: 544px;
+            width: 488px;
+            top: 320px;
+        }
+
+        button{
+            right: 367px;
+            top: 464px;
+        }
+
+        .fractal{
+            bottom: -160px;
+            right: 272px;
+        }
+    }
+}
+
+@media (max-width:1350px){
+    .art{    
+        .content{
+            img:first-child{
+                width: 400px;
+            }
+
+            .fractal{
+                width: 350px;
+            }
+        }
+
+        .content-1{
+            p{
+                left: 440px;
+            }
+
+            button{
+                left:280px
+            }
+        }
+
+        .content-2{
+
+            p{
+                right: 415px;
+                width: 465px;
+            }
+
+            button{
+                right: 290px;
+            }
+
+            .fractal{
+                bottom: -240px;
+                right: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .art{
+        .content-1{
+            .fractal{
+                left: 200px;
+            }
+        }
+
+        .content-2{
+            .fractal{
+                right: 215px;
+            }
+        }
+    }
+}

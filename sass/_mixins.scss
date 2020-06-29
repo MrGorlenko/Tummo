@@ -27,6 +27,10 @@
     width: 843px;
     letter-spacing: 6px;
     color: #715841;
+    @media screen and (max-width: 1500px){
+        width: 700px;
+    }
+
     @media screen and (max-width: 1200px){
         font-weight: 300;
         font-size: 60px;
@@ -60,6 +64,11 @@
     }
 }
 
+@mixin line-hidden{
+    opacity: 0 !important;
+    transition: opacity .3s ease !important;
+}
+
 @mixin button{
     width: 234px;
     height: 81px;
@@ -69,6 +78,7 @@
     background: none;
     border-radius: 10px;
     opacity: 1;
+    z-index: 30;
 
     // transition: opacity .6s ease;
     transition: background-color .5s ease;

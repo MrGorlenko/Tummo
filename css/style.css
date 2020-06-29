@@ -12,32 +12,89 @@ body {
   background-color: #FFFEF6;
 }
 
-#mainNav .navbar-nav > li > a:hover,
-#mainNav .navbar-nav > li > a:focus:hover {
-  color: #589BFF;
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 90px;
+  width: 843px;
+  letter-spacing: 6px;
+  color: #715841;
 }
 
-#mainNav.navbar-shrink {
-  border-color: rgba(34, 34, 34, 0.1);
-  background-color: white;
+@media screen and (max-width: 1500px) {
+  .title {
+    width: 700px;
+  }
 }
 
-#mainNav.navbar-shrink .navbar-brand {
-  color: #222222;
+@media screen and (max-width: 1200px) {
+  .title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    width: 468px;
+    letter-spacing: 0px;
+  }
 }
 
-#mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-  color: #589BFF;
+.paragraph {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+  color: #715841;
 }
 
-#mainNav.navbar-shrink .navbar-nav > li > a,
-#mainNav.navbar-shrink .navbar-nav > li > a:focus {
-  color: #222222;
+@media screen and (max-width: 1500px) {
+  .paragraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
-#mainNav.navbar-shrink .navbar-nav > li > a:hover,
-#mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-  color: #589BFF;
+.button {
+  width: 234px;
+  height: 81px;
+  border: 1px solid #715841;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border-radius: 10px;
+  opacity: 1;
+  z-index: 30;
+  transition: background-color .5s ease;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #715841;
+}
+
+.button:hover {
+  transition: background-color 1s ease;
+  background-color: #4d4d4d;
+  opacity: .6;
+}
+
+@media screen and (max-width: 1200px) {
+  .button {
+    width: 190px;
+    height: 67px;
+  }
+}
+
+.line-hidden {
+  opacity: 0 !important;
+  transition: opacity .3s ease !important;
+}
+
+.content {
+  padding: 0;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -65,7 +122,9 @@ body {
 .line {
   position: fixed;
   bottom: 40px;
+  opacity: 1;
   z-index: 30;
+  transition: opacity .3s ease;
 }
 
 .line span {
@@ -208,6 +267,12 @@ body {
   position: absolute;
 }
 
+@media screen and (max-width: 1500px) {
+  .hero h1 {
+    width: 700px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .hero h1 {
     font-weight: 300;
@@ -219,37 +284,9 @@ body {
 }
 
 .hero button {
-  width: 234px;
-  height: 81px;
-  border: 1px solid #715841;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border-radius: 10px;
-  opacity: 1;
-  transition: background-color .5s ease;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
-  color: #715841;
   position: absolute;
   left: 495px;
   top: 390px;
-}
-
-.hero button:hover {
-  transition: background-color 1s ease;
-  background-color: #4d4d4d;
-  opacity: .6;
-}
-
-@media screen and (max-width: 1200px) {
-  .hero button {
-    width: 190px;
-    height: 67px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -264,6 +301,12 @@ body {
     color: #715841;
     top: 65px;
     left: 290px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 1500px) {
+  .hero h1 {
+    width: 700px;
   }
 }
 
@@ -287,47 +330,16 @@ body {
 }
 
 .world h2 {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 72px;
-  line-height: 90px;
-  width: 843px;
-  letter-spacing: 6px;
-  color: #715841;
   position: absolute;
   left: 390px;
   top: 85px;
 }
 
-@media screen and (max-width: 1200px) {
-  .world h2 {
-    font-weight: 300;
-    font-size: 60px;
-    line-height: 75px;
-    width: 468px;
-    letter-spacing: 0px;
-  }
-}
-
 .world p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 38px;
-  color: #715841;
   width: 550px;
   position: absolute;
   left: 360px;
   top: 215px;
-}
-
-@media screen and (max-width: 1500px) {
-  .world p {
-    font-size: 18px;
-    line-height: 30px;
-  }
 }
 
 @media (max-width: 1500px) {
@@ -347,6 +359,157 @@ body {
     font-size: 16px;
     line-height: 26px;
     width: 445px;
+  }
+}
+
+.art {
+  margin-bottom: 220px;
+}
+
+.art .content h2, .art .content p, .art .content button, .art .content .fractal {
+  position: absolute;
+}
+
+.art .content-1 h2 {
+  top: 56px;
+  left: 213px;
+}
+
+.art .content-1 p {
+  top: 225px;
+  left: 542px;
+  width: 515px;
+}
+
+.art .content-1 button {
+  top: 455px;
+  left: 360px;
+}
+
+.art .content-1 .fractal {
+  bottom: -220px;
+  left: 320px;
+}
+
+.art .content-2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -100px;
+}
+
+.art .content-2 p {
+  right: 544px;
+  width: 488px;
+  top: 320px;
+}
+
+.art .content-2 button {
+  right: 367px;
+  top: 464px;
+}
+
+.art .content-2 .fractal {
+  bottom: -160px;
+  right: 272px;
+}
+
+@media (max-width: 1350px) {
+  .art .content img:first-child {
+    width: 400px;
+  }
+  .art .content .fractal {
+    width: 350px;
+  }
+  .art .content-1 p {
+    left: 440px;
+  }
+  .art .content-1 button {
+    left: 280px;
+  }
+  .art .content-2 p {
+    right: 415px;
+    width: 465px;
+  }
+  .art .content-2 button {
+    right: 290px;
+  }
+  .art .content-2 .fractal {
+    bottom: -240px;
+    right: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .art .content-1 .fractal {
+    left: 200px;
+  }
+  .art .content-2 .fractal {
+    right: 215px;
+  }
+}
+
+.silk {
+  height: 700px;
+}
+
+.silk .content h2 {
+  position: absolute;
+  width: 365px;
+  top: 116px;
+  left: 368px;
+}
+
+.silk .content p {
+  position: absolute;
+  width: 488px;
+  top: 370px;
+  left: 555px;
+}
+
+.silk .content button {
+  position: absolute;
+  top: 553px;
+  left: 362px;
+}
+
+.silk .content .fractal {
+  position: absolute;
+  left: -208px;
+  bottom: -208px;
+}
+
+@media (max-width: 1350px) {
+  .silk .content h2 {
+    left: 280px;
+    top: 70px;
+  }
+  .silk .content p {
+    top: 295px;
+    left: 450px;
+  }
+  .silk .content button {
+    top: 425px;
+    left: 275px;
+  }
+  .silk .content img:first-child {
+    width: 390px;
+  }
+  .silk .content .fractal {
+    width: 330px;
+    height: 330px;
+    bottom: -160px;
+    left: -160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .silk .content h2 {
+    width: 245px;
+  }
+  .silk .content p {
+    top: 265px;
+    left: 410px;
+    width: 435px;
   }
 }
 /*# sourceMappingURL=style.css.map */

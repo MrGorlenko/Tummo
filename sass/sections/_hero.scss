@@ -15,9 +15,6 @@
     } 
 
     button{
-        @include button;
-        @include Roboto-regular;
-
         position: absolute;
         left: 495px;
         top: 390px;

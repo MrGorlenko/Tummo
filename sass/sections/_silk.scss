@@ -1,0 +1,84 @@
+.silk{
+    height: 700px;
+
+    .content{
+        h2{
+            position: absolute;
+            width: 365px;
+
+            top: 116px;
+            left: 368px;
+        }
+
+        p{
+            position: absolute;
+            width: 488px;
+
+            top: 370px;
+            left: 555px;
+        }
+
+        button{
+            position: absolute;
+            top: 553px;
+            left: 362px;
+        }
+
+        .fractal{
+            position: absolute;
+            left: -208px;
+            bottom: -208px;
+        }
+    }
+}
+
+@media (max-width: 1350px){
+    .silk{
+        .content{
+
+            h2{
+                left: 280px;
+                top: 70px;
+            }
+
+            p{
+                top: 295px;
+                left: 450px;
+            }
+
+            button{
+                top: 425px;
+                left: 275px;
+            }
+
+            img:first-child{
+                width: 390px;
+            }
+
+            .fractal{
+                width: 330px;
+                height: 330px;
+
+                bottom: -160px;
+                left: -160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .silk{
+        .content{
+
+            h2{
+                width: 245px;
+            }
+
+            p{
+                top: 265px;
+                left: 410px;
+                width: 435px;
+            }
+        }
+    }
+}
