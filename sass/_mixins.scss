@@ -126,6 +126,18 @@
     }
 }
 
+@mixin paragraph-thin{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #715841;
+    
+}
+
 @mixin line-hidden{
     opacity: 0 !important;
     transition: opacity .3s ease !important;
@@ -238,4 +250,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@mixin item-global{
+    @media screen and (max-width: 1500px){
+        width: 400px;
+    }
+    @media screen and (max-width: 1200px){
+        width: 300px;
+    }
+}
+
+@mixin item{
+    @media screen and (max-width: 1500px){
+        width: 180px;
+    }
+    @media screen and (max-width: 1200px){
+        width: 150px;
+    }
 }

@@ -1,0 +1,22 @@
+.story{
+    h1{
+        position: absolute;
+        top: 282px;
+        right: 282px;
+    }
+}
+
+@media (max-width: 1500px){
+    .story{
+
+        h1{
+            position: absolute;
+            top: 190px;
+            right: 200px;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}

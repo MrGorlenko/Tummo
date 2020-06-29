@@ -1,0 +1,14 @@
+@import '../mixins';
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+
+    span{
+        margin-top: 43px;
+        @include paragraph-thin;
+    }
+}
