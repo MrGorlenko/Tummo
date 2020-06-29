@@ -25,12 +25,11 @@ $(document).ready(function(){
     $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() >= $('#silk').offset().top-1300) {
-                // $(".art-link").addClass('act')
+                $(".silk-link").addClass('act')
                 $('#mainNav').removeClass('line-hidden')
                 // alert('yo')
-                console.log('yo')
             } else {
-                // $(".art-link").removeClass('act')
+                $(".silk-link").removeClass('act')
                 // $('#mainNav').removeClass('line-hidden')
             }
         });
