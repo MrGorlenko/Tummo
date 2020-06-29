@@ -5,6 +5,65 @@
     transition: color .3s ease-in;
 }
 
+@mixin menu{
+    background: #BDA367;
+    border-radius: 0 0 10px 10px;
+    height: 150px;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+}
+
+@mixin menu-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    
+    color: #FFFEF6;
+}
+
+@mixin menu-list{
+    display: flex;
+    width: 90%;
+    height: 130%;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 0px;
+
+    @media screen and (max-width: 1700px){
+        width: 1025px;
+    }
+
+    @media screen and (max-width: 1250px){
+        width: 880px;
+        padding-left: 30px;
+        height: 140%;
+    }
+    @media screen and (max-width: 1200px){
+        height: 115%;
+    }
+}
+
+@mixin menu-line{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 111px;
+    height: 5px;
+    background-color: #FFFEF6;
+    @media screen and (max-width: 1700px){
+        width: 80px;
+    }
+
+    @media screen and (max-width: 1250px){
+        width: 65px;
+    }
+}
+
 @mixin Krona{
     font-family: 'Krona One', sans-serif;
     font-style: normal;

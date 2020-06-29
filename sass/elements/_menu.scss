@@ -1,0 +1,132 @@
+@import '../mixins';
+
+
+.menu-wrapper{
+    overflow: hidden;
+
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.menu-none{
+    right: -100% !important;
+    transition: right .4s ease;
+}
+
+.menu{
+
+    @include menu;
+
+    right: 0;
+
+    transition: right .4s ease;
+
+    ul{
+        @include menu-list;
+        li{
+            list-style-type: none;
+            a{
+                @include menu-link;
+            }
+
+            position: relative;
+
+            &:after{
+                @include menu-line;
+                top: 10px;
+            }
+        }
+
+        li:first-child:after{
+            left: 165px;
+        }
+
+        li:nth-child(2):after{
+            left: 140px;
+        }
+        li:nth-child(3):after{
+            left: 150px;
+        }
+        li:nth-child(4):after{
+            left: 140px;
+        }
+        li:nth-child(5):after{
+            display: none;
+        }
+    }
+
+    img{
+        position: absolute;
+        right: 0;
+        top: 80px;
+
+        opacity: 1 !important;
+
+        cursor: pointer;
+
+        z-index: 25;
+    }
+}
+
+@media (max-width: 1700px){
+    .menu{
+    
+        ul{
+    
+            li:first-child:after{
+                left: 130px;
+            }
+    
+            li:nth-child(2):after{
+                left: 110px;
+            }
+            li:nth-child(3):after{
+                left: 125px;
+            }
+            li:nth-child(4):after{
+                left: 105px;
+            }
+            li:nth-child(5):after{
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1250px){
+    .menu{
+        height: 136px;
+        ul{
+    
+            li:first-child:after{
+                left: 120px;
+            }
+    
+            li:nth-child(2):after{
+                left: 90px;
+            }
+            li:nth-child(3):after{
+                left: 100px;
+            }
+            li:nth-child(4):after{
+                left: 80px;
+            }
+            li:nth-child(5):after{
+                display: none;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 1200px){
+    .menu{
+        img{
+            top:60px;
+        }
+    }
+}
