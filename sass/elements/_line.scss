@@ -1,5 +1,11 @@
 @import '../mixins';
 
+.line-active{
+    opacity: 1 !important;
+    transition: opacity .3s ease-in;
+}
+
+
 .line{
     position: fixed;
     bottom: 80px;
@@ -15,6 +21,36 @@
         display: block;
         position: absolute;
 
+    }
+
+    .first, .second, .third, .forth, .fifth{
+        position: absolute;
+    }
+
+    .second, .third, .forth, .fifth{
+        opacity: 0;
+        transition: opacity .3s ease-in;  
+    }
+
+    .first{
+        width: 43px;
+        left: 3px;
+    }
+
+    .second{
+        top: 102px;
+        left: 4px;
+        width: 61px;
+    }
+
+    .third{
+        top: 118px;
+        left: -2px;
+    }
+
+    .forth{
+        bottom: 0;
+        left: 30px;
     }
 
     .act{
@@ -83,5 +119,31 @@
             bottom: 5px;
             left: 75px;
         }
+
+    
+        .first{
+            top: -88px;
+            left: 2px;
+            width: 34px;
+        }
+    
+        .second{
+            top: 10px;
+            height: 207px;
+            left: 3px;
+            width: 52px;
+        }
+    
+        .third{
+            top: 7px;
+            left: 0px;
+        }
+    
+        .forth{
+            bottom: -84px;
+            left: 27px;
+            width: 34px;
+        }
+    
     }
 }

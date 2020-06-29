@@ -13,19 +13,19 @@ body {
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: OratorW01-Medium;
   font-style: normal;
   font-weight: 300;
   font-size: 72px;
   line-height: 90px;
-  width: 843px;
+  width: 830px;
   letter-spacing: 6px;
   color: #715841;
 }
 
 @media screen and (max-width: 1500px) {
   .title {
-    width: 700px;
+    width: 800px;
   }
 }
 
@@ -34,7 +34,7 @@ body {
     font-weight: 300;
     font-size: 60px;
     line-height: 75px;
-    width: 468px;
+    width: 600px;
     letter-spacing: 0px;
   }
 }
@@ -104,6 +104,12 @@ body {
   }
 }
 
+@font-face {
+  font-family: "OratorW01-Medium";
+  src: url("//db.onlinewebfonts.com/t/daf8c1a0f06e7a24d9dca48b9d88dac0.eot");
+  src: url("//db.onlinewebfonts.com/t/daf8c1a0f06e7a24d9dca48b9d88dac0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/daf8c1a0f06e7a24d9dca48b9d88dac0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/daf8c1a0f06e7a24d9dca48b9d88dac0.woff") format("woff"), url("//db.onlinewebfonts.com/t/daf8c1a0f06e7a24d9dca48b9d88dac0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/daf8c1a0f06e7a24d9dca48b9d88dac0.svg#OratorW01-Medium") format("svg");
+}
+
 .burger {
   height: 18px;
   display: flex;
@@ -120,6 +126,11 @@ body {
   background: #BEA468;
   color: #BEA468;
   border-radius: 5px;
+}
+
+.line-active {
+  opacity: 1 !important;
+  transition: opacity .3s ease-in;
 }
 
 .line {
@@ -146,6 +157,36 @@ body {
   .line span {
     font-size: 14px;
   }
+}
+
+.line .first, .line .second, .line .third, .line .forth, .line .fifth {
+  position: absolute;
+}
+
+.line .second, .line .third, .line .forth, .line .fifth {
+  opacity: 0;
+  transition: opacity .3s ease-in;
+}
+
+.line .first {
+  width: 43px;
+  left: 3px;
+}
+
+.line .second {
+  top: 102px;
+  left: 4px;
+  width: 61px;
+}
+
+.line .third {
+  top: 118px;
+  left: -2px;
+}
+
+.line .forth {
+  bottom: 0;
+  left: 30px;
 }
 
 .line .act {
@@ -206,6 +247,26 @@ body {
   .line .gallery {
     bottom: 5px;
     left: 75px;
+  }
+  .line .first {
+    top: -88px;
+    left: 2px;
+    width: 34px;
+  }
+  .line .second {
+    top: 10px;
+    height: 207px;
+    left: 3px;
+    width: 52px;
+  }
+  .line .third {
+    top: 7px;
+    left: 0px;
+  }
+  .line .forth {
+    bottom: -84px;
+    left: 27px;
+    width: 34px;
   }
 }
 
@@ -474,12 +535,12 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: OratorW01-Medium;
   font-style: normal;
   font-weight: 300;
   font-size: 72px;
   line-height: 90px;
-  width: 843px;
+  width: 830px;
   letter-spacing: 6px;
   color: #715841;
   top: 76px;
@@ -489,7 +550,7 @@ body {
 
 @media screen and (max-width: 1500px) {
   .hero h1 {
-    width: 700px;
+    width: 800px;
   }
 }
 
@@ -498,7 +559,7 @@ body {
     font-weight: 300;
     font-size: 60px;
     line-height: 75px;
-    width: 468px;
+    width: 600px;
     letter-spacing: 0px;
   }
 }
@@ -511,12 +572,12 @@ body {
 
 @media (max-width: 1200px) {
   .hero h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: OratorW01-Medium;
     font-style: normal;
     font-weight: 300;
     font-size: 72px;
     line-height: 90px;
-    width: 843px;
+    width: 830px;
     letter-spacing: 6px;
     color: #715841;
     top: 65px;
@@ -526,7 +587,7 @@ body {
 
 @media screen and (max-width: 1200px) and (max-width: 1500px) {
   .hero h1 {
-    width: 700px;
+    width: 800px;
   }
 }
 
@@ -535,7 +596,7 @@ body {
     font-weight: 300;
     font-size: 60px;
     line-height: 75px;
-    width: 468px;
+    width: 600px;
     letter-spacing: 0px;
   }
 }
@@ -675,7 +736,7 @@ body {
 
 .silk .content h2 {
   position: absolute;
-  width: 365px;
+  width: 450px;
   top: 116px;
   left: 368px;
 }

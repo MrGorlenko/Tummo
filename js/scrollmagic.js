@@ -4,8 +4,10 @@ $(document).ready(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() >= $('.world').offset().top - 500) {
                 $(".tummo").addClass('act')
+                $(".second").addClass('line-active')
             } else {
                 $(".tummo").removeClass('act')
+                $(".second").removeClass('line-active')
             }
         });
     });
@@ -35,8 +37,10 @@ $(document).ready(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() >= $('#silk').offset().top-300) {
                 $(".silk-link").addClass('act')
+                $('.third').addClass('line-active')
             } else {
                 $(".silk-link").removeClass('act')
+                $('.third').removeClass('line-active')
             }
         });
     });
@@ -45,8 +49,10 @@ $(document).ready(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() >= $('#gallery').offset().top-300) {
                 $(".gallery-link").addClass('act')
+                $('.forth').addClass('line-active')
             } else {
                 $(".gallery-link").removeClass('act')
+                $('.forth').removeClass('line-active')
             }
         });
     });
