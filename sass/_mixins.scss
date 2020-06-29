@@ -80,13 +80,14 @@
     opacity: 1;
     z-index: 30;
 
-    // transition: opacity .6s ease;
-    transition: background-color .5s ease;
+    transition: background-color 1s ease;
     &:hover{
-        // transition: opacity .6s ease;
+
         transition: background-color 1s ease;
         background-color: lighten($color: #000000, $amount: 30);
         opacity: .6;
+        color: lighten($color: #715841, $amount: 30)
+        // color: #715841;
     }
 
     @media screen and (max-width: 1200px){

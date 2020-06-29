@@ -65,7 +65,7 @@ body {
   border-radius: 10px;
   opacity: 1;
   z-index: 30;
-  transition: background-color .5s ease;
+  transition: background-color 1s ease;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -78,6 +78,7 @@ body {
   transition: background-color 1s ease;
   background-color: #4d4d4d;
   opacity: .6;
+  color: #bea48d;
 }
 
 @media screen and (max-width: 1200px) {
@@ -248,7 +249,9 @@ body {
 }
 
 .swiper-container {
-  width: 1200px;
+  width: 70%;
+  margin-left: 30% !important;
+  margin-right: 0 !important;
   height: 400px;
   top: 243px;
 }
@@ -297,18 +300,6 @@ body {
 
 .swiper-wrapper {
   margin-top: 85px;
-}
-
-@media (max-width: 1300px) {
-  .swiper-container {
-    width: 990px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .swiper-container {
-    width: 100%;
-  }
 }
 
 .hero__line {
