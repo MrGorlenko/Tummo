@@ -1,0 +1,21 @@
+.section-gallery{
+    
+    height: 900px;
+
+    position: relative;
+
+    h2{
+        position: absolute;
+        left: 390px;
+    }
+
+    .content{
+        height: 100%;
+    }
+
+    .fractal{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

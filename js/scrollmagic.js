@@ -25,12 +25,8 @@ $(document).ready(function(){
     $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() >= $('#silk').offset().top-1300) {
-                // $(".silk-link").addClass('act')
                 $('#mainNav').removeClass('line-hidden')
-                // alert('yo')
             } else {
-                // $(".silk-link").removeClass('act')
-                // $('#mainNav').removeClass('line-hidden')
             }
         });
     });
@@ -39,11 +35,18 @@ $(document).ready(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() >= $('#silk').offset().top-300) {
                 $(".silk-link").addClass('act')
-                // $('#mainNav').removeClass('line-hidden')
-                // alert('yo')
             } else {
                 $(".silk-link").removeClass('act')
-                // $('#mainNav').removeClass('line-hidden')
+            }
+        });
+    });
+
+    $(function(){
+        $(document).scroll(function(){
+            if($(this).scrollTop() >= $('#gallery').offset().top-300) {
+                $(".gallery-link").addClass('act')
+            } else {
+                $(".gallery-link").removeClass('act')
             }
         });
     });

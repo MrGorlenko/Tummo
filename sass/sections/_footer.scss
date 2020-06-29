@@ -1,0 +1,16 @@
+@import '../mixins';
+
+.footer{
+    @include footer;
+
+    button{
+        @include footer-button;
+    }
+
+    input{
+        @include footer-input;
+        margin-right: 18px;
+    }
+
+}
+

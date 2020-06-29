@@ -10,4 +10,35 @@ $(document).ready(function(){
     duration: 1250,
     delay: (el, i) => 150 * (i+1)
     })
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 6,
+        grabCursor: true,
+        // followFinger: false,
+        // preventInteractionOnTransition: true,
+        // initialSlide: -6,
+    
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          progressbarOpposite: true,
+        },
+    
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true
+        },
+      })
 })

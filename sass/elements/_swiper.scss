@@ -1,0 +1,46 @@
+@import '../mixins';
+
+.swiper-container {
+    width: 1200px;
+    height: 400px;
+
+    top: 243px;
+
+    .content-wrapper{
+        @include content-wrapper;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .content{
+        @include content;
+    }
+
+    .swiper-scrollbar-drag{
+        background: #BDA367 !important;
+    }
+
+}
+
+.scrollbar{
+    bottom: auto !important;
+}
+
+.swiper-wrapper{
+    margin-top: 85px;
+}
+
+@media (max-width: 1300px){
+    .swiper-container{
+        width: 990px;
+    }
+}
+
+@media (max-width: 1000px){
+    .swiper-container{
+        width: 100%;
+    }
+}
