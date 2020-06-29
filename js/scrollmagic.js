@@ -25,8 +25,21 @@ $(document).ready(function(){
     $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() >= $('#silk').offset().top-1300) {
-                $(".silk-link").addClass('act')
+                // $(".silk-link").addClass('act')
                 $('#mainNav').removeClass('line-hidden')
+                // alert('yo')
+            } else {
+                // $(".silk-link").removeClass('act')
+                // $('#mainNav').removeClass('line-hidden')
+            }
+        });
+    });
+
+    $(function(){
+        $(document).scroll(function(){
+            if($(this).scrollTop() >= $('#silk').offset().top-300) {
+                $(".silk-link").addClass('act')
+                // $('#mainNav').removeClass('line-hidden')
                 // alert('yo')
             } else {
                 $(".silk-link").removeClass('act')
