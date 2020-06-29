@@ -45,4 +45,38 @@ $(document).ready(function(){
     })
 
 
+    anime({
+        targets: '.fractal-1',
+        keyframes: [
+          {rotate: 7}
+        ],
+        loop: true,
+        duration: 3500,
+        direction: 'alternate',
+        easing: 'linear'
+    });
+
+    anime({
+        targets: '.fractal-2',
+        keyframes: [
+          {rotate: 360}
+        ],
+        loop: true,
+        duration: 101000,
+        direction: 'alternate',
+        easing: 'linear'
+    });
+
+    anime({
+        targets: '.fractal-3',
+        keyframes: [
+          {rotate: -360}
+        ],
+        loop: true,
+        duration: 100000,
+        direction: 'alternate',
+        easing: 'linear'
+    });
+
+
 })
