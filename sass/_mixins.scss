@@ -138,6 +138,11 @@
     
 }
 
+@mixin paragraph-white{
+    @include paragraph;
+    color: #fff;
+}
+
 @mixin line-hidden{
     opacity: 0 !important;
     transition: opacity .3s ease !important;

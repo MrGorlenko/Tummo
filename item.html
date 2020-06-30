@@ -41,114 +41,149 @@
 </head>
 <body>
 
-    <header id='hero'>
-        <nav>
-            <div class="container-md ">
-                <div class="row justify-content-between align-items-center">
-                    <img src="img/logo.png" alt="">
-
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+    <div id='app'>
+        <header id='hero'>
+            <nav>
+                <div class="container-md ">
+                    <div class="row justify-content-between align-items-center">
+                        <img src="img/logo.png" alt="">
+    
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="menu-wrapper">
-
-        <section class='menu main-menu menu-none'>
-            <div class="h-100 container-md content">
-                <ul>
-                    <li><a href="#">Shop now</a></li>
-                    <li><a href="#">Vision</a></li>
-                    <li><a href="#">Jewerly</a></li>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-                <img src="img/close.svg" alt="" class="close">
+            </nav>
+        </header>
+    
+        <div class="menu-wrapper">
+    
+            <section class='menu main-menu menu-none'>
+                <div class="h-100 container-md content">
+                    <ul>
+                        <li><a href="#">Shop now</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Jewerly</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                    <img src="img/close.svg" alt="" class="close">
+                </div>
+            </section>
+    
+        </div>
+    
+        <section class="story">
+            <div class="container-md">
+                <div class="row justify-content-end">
+                    <div class="col-5">
+                        <h1 id='title' class="title">Your tummo story starts here</h1>
+                        <img src="img/bird-2.png" alt="">
+                    </div>
+                </div>
             </div>
         </section>
-
+    
+        <section class="item-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 content content-1">
+                        <img src="img/item-global-1.png" alt="">
+                        <h2 class="title">Pendants</h2>
+                        <img class='fractal' src="img/fractal-full.svg" alt="">
+                    </div>
+                    <div class="col-6 content content-2">
+                        <p class="paragraph click">Нажмите на товарную позицию, что бы узнать больше.</p>
+                        <div v-on:click='callModal' class="box"><img src="img/item-1.png" alt="">
+                            <span>Jewerly as Art</span>
+                            <p class="paragraph">2 400 $</p>
+                        </div>
+                        <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                            <span>Jewerly as Art</span>
+                            <p class="paragraph">2 400 $</p>
+                        </div>
+                        <div v-on:click='callModal' class="box"><img src="img/item-3.png" alt="">
+                            <span>Jewerly as Art</span>
+                            <p class="paragraph">2 400 $</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="item-2">
+            <div class="container-fluid">
+                <div class="row justify-content-end">
+                    <div class="col-6 content content-2">
+                        <p class="paragraph click">Нажмите на товарную позицию, что бы узнать больше.</p>
+                        <div v-on:click='callModal' class="box"><img src="img/item-1.png" alt="">
+                            <span>Jewerly as Art</span>
+                            <p class="paragraph">2 400 $</p>
+                        </div>
+                        <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                            <span>Jewerly as Art</span>
+                            <p class="paragraph">2 400 $</p>
+                        </div>
+                        <div v-on:click='callModal' class="box"><img src="img/item-3.png" alt="">
+                            <span>Jewerly as Art</span>
+                            <p class="paragraph">2 400 $</p>
+                        </div>
+                    </div>
+                    <div class="col-4 content content-1">
+                        <img src="img/item-global-2.png" alt="">
+                        <h2 class="title">Bracelets</h2>
+                        <img class='fractal' src="img/fractal-full.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="h-100 container-md">
+                <div class="row h-100 justify-content-end align-items-center">
+                    <input placeholder="Your e-mail" type="text">
+                    <button>Send</button>
+                </div>
+            </div>
+        </footer>
+    
+        <div v-bind:class="modalState" class="modal-wrapper">
+            <div class="modal row align-items-center">
+    
+                <div v-on:click='removeModal' class="close"><img src="img/close.svg" alt=""></div>
+    
+            <div class="col-4 p-0">
+                <img src="img/modal.png" alt="">
+            </div>
+            <div class="col-7">
+                <p>Кулон «on the cloud 9 » - символизирует пламя любви, которое никогда не гаснет и живет внутри вас. Любовь,подобна облакам, каждый день она разная, но она всегда прекрасная , легкая и чистая , ее невозможно потрогать , но возможно ощутить свет, который она излучает.</p>
+                <div class="info">
+                    <div>
+                        <span class="label">On the cloud 9</span>
+                        <span class="price">2 400 $</span>
+                    </div>
+                    
+    
+                    <div class="counter">
+                        <span>{{count}}</span>
+                        <button v-on:click="addItem" class="up"><img src="img/plus.svg" alt=""></button>
+                        <button v-on:click="removeItem" class="down"><img src="img/minus.svg" alt=""></button>
+                    </div>
+    
+                    <button class="button">Купить</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 
-    <section class="story">
-        <div class="container-md">
-            <div class="row justify-content-end">
-                <div class="col-5">
-                    <h1 id='title' class="title">Your tummo story starts here</h1>
-                    <img src="img/bird-2.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="item-1">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-4 content content-1">
-                    <img src="img/item-global-1.png" alt="">
-                    <h2 class="title">Pendants</h2>
-                    <img class='fractal' src="img/fractal-full.svg" alt="">
-                </div>
-                <div class="col-6 content content-2">
-                    <p class="paragraph click">Нажмите на товарную позицию, что бы узнать больше.</p>
-                    <div class="box"><img src="img/item-1.png" alt="">
-                        <span>Jewerly as Art</span>
-                        <p class="paragraph">2 400 $</p>
-                    </div>
-                    <div class="box"><img src="img/item-2.png" alt="">
-                        <span>Jewerly as Art</span>
-                        <p class="paragraph">2 400 $</p>
-                    </div>
-                    <div class="box"><img src="img/item-3.png" alt="">
-                        <span>Jewerly as Art</span>
-                        <p class="paragraph">2 400 $</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="item-2">
-        <div class="container-fluid">
-            <div class="row justify-content-end">
-                <div class="col-6 content content-2">
-                    <p class="paragraph click">Нажмите на товарную позицию, что бы узнать больше.</p>
-                    <div class="box"><img src="img/item-1.png" alt="">
-                        <span>Jewerly as Art</span>
-                        <p class="paragraph">2 400 $</p>
-                    </div>
-                    <div class="box"><img src="img/item-2.png" alt="">
-                        <span>Jewerly as Art</span>
-                        <p class="paragraph">2 400 $</p>
-                    </div>
-                    <div class="box"><img src="img/item-3.png" alt="">
-                        <span>Jewerly as Art</span>
-                        <p class="paragraph">2 400 $</p>
-                    </div>
-                </div>
-                <div class="col-4 content content-1">
-                    <img src="img/item-global-2.png" alt="">
-                    <h2 class="title">Bracelets</h2>
-                    <img class='fractal' src="img/fractal-full.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="h-100 container-md">
-            <div class="row h-100 justify-content-end align-items-center">
-                <input placeholder="Your e-mail" type="text">
-                <button>Send</button>
-            </div>
-        </div>
-    </footer>
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src='js/vue111.js'></script>
     <script src='js/main.js'></script>
 </body>
 </html>

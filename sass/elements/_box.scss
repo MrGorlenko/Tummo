@@ -7,8 +7,22 @@
 
     margin-top: 50px;
 
+    cursor: pointer;
+
     span{
         margin-top: 43px;
         @include paragraph-thin;
+    }
+
+    img{
+        opacity: 1;
+        transition: opacity .5s ease;
+    }
+
+    &:hover{
+        img{
+            opacity: .8;
+            transition: opacity .5s ease;
+        }
     }
 }
