@@ -78,15 +78,15 @@
 }
 
 @mixin KronaGiant{
-    font-family: OratorW01-Medium;
+    // font-family: OratorW01-Medium;
     // font-family: 'PingFang+SC';
-    // font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 72px;
     line-height: 90px;
-    // width: 843px;
-    width: 830px;
+    width: 843px;
+    // width: 830px;
     letter-spacing: 6px;
     color: #715841;
     @media screen and (max-width: 1500px){
