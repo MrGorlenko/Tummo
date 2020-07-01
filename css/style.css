@@ -893,7 +893,7 @@ body {
 }
 
 .item-2 {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .item-2 h2 {
@@ -1173,6 +1173,98 @@ body {
 .modal .info .counter .down {
   bottom: 14px;
   right: 24px;
+}
+
+.basket {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+.basket .content {
+  height: 100%;
+  width: 740px;
+  border-radius: 10px 0 0 10px;
+  background: #BDA367;
+  position: relative;
+}
+
+.basket .content img, .basket .content span, .basket .content div, .basket .content button {
+  position: absolute;
+}
+
+.basket .content img {
+  left: 83px;
+  top: 25px;
+}
+
+.basket .content span {
+  left: 125px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+  color: #715841;
+  color: #fff;
+}
+
+@media screen and (max-width: 1500px) {
+  .basket .content span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .basket .content span {
+    line-height: 38px !important;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .basket .content span {
+    line-height: 34px !important;
+    font-size: 16px;
+  }
+}
+
+.basket .content .amount {
+  top: 8px;
+  font-weight: 200;
+}
+
+.basket .content .price {
+  bottom: 8px;
+  font-weight: 600;
+}
+
+.basket .content .line {
+  width: 111px;
+  height: 2px;
+  border: none;
+  background: #FFFEF6;
+  border-radius: 5px;
+  left: 236px;
+  top: 37px;
+}
+
+.basket .content button {
+  top: 27px;
+  left: 393px;
+  width: 170px;
+  height: 24px;
+  background: #BDA367;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFEF6;
 }
 
 .hero__line {

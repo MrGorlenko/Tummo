@@ -91,7 +91,7 @@
                 <div class="row">
                     <div class="col-4 content content-1">
                         <img src="img/item-global-1.png" alt="">
-                        <h2 class="title">Pendants</h2>
+                        <h2 class="title">Кулоны</h2>
                         <img class='fractal' src="img/fractal-full.svg" alt="">
                     </div>
                     <div class="col-6 content content-2">
@@ -133,21 +133,33 @@
                     </div>
                     <div class="col-4 content content-1">
                         <img src="img/item-global-2.png" alt="">
-                        <h2 class="title">Bracelets</h2>
+                        <h2 class="title">Браслеты</h2>
                         <img class='fractal' src="img/fractal-full.svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
+
+    <section class="basket">
+        <div class="content">
+            <img src="img/basket.svg" alt="">
+            <span class="amount"> {{amount}} </span>
+            <span class="price">{{total}} $</span>
+            <div class="line"></div>
+            <button>Оформить заказ</button>
+        </div>
+    </section>
     
-        <footer class="footer">
-            <div class="h-100 container-md">
-                <div class="row h-100 justify-content-end align-items-center">
-                    <input placeholder="Your e-mail" type="text">
-                    <button>Send</button>
-                </div>
+    <footer class="footer">
+        <div class="h-100 container-md">
+            <div class="footer__container row h-100 justify-content-end align-items-center">
+                <a href=""><img src="img/Instagram.png" alt=""></a>
+                
+                <input placeholder="Your e-mail" type="text">
+                <button>Send</button>
             </div>
-        </footer>
+        </div>
+    </footer>
     
         <div v-bind:class="modalState" class="modal-wrapper">
             <div class="modal row align-items-center">
@@ -162,7 +174,7 @@
                 <div class="info">
                     <div>
                         <span class="label">On the cloud 9</span>
-                        <span class="price">2 400 $</span>
+                        <span class="price">{{price}} $</span>
                     </div>
                     
     
@@ -172,7 +184,7 @@
                         <button v-on:click="removeItem" class="down"><img src="img/minus.svg" alt=""></button>
                     </div>
     
-                    <button class="button">Купить</button>
+                    <button v-on:click='buyItem' class="button">Купить</button>
                 </div>
             </div>
             </div>
