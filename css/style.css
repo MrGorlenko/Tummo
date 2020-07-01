@@ -117,6 +117,18 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .button {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .button {
+    width: 320px;
+  }
+}
+
 .line-hidden {
   opacity: 0 !important;
   transition: opacity .3s ease !important;
@@ -138,7 +150,7 @@ body {
     margin-bottom: 40px;
     padding: 0 15px;
   }
-  .art, .silk, .section-gallery, .footer {
+  .silk, .section-gallery, .footer {
     display: none;
   }
 }
@@ -1363,7 +1375,7 @@ body {
 
 @media (max-width: 992px) {
   .world {
-    height: 415px;
+    height: 525px;
   }
   .world h2 {
     text-align: end;
@@ -1504,6 +1516,114 @@ body {
   }
   .art .content-2 .fractal {
     right: 215px;
+  }
+}
+
+@media (max-width: 992px) {
+  .art .content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .art .content-1 h2 {
+    top: -55px;
+    left: 390px;
+  }
+  .art .content-1 .fractal-2 {
+    width: 300px;
+    top: 430px;
+    z-index: 12;
+  }
+  .art .content-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+  }
+  .art .content-2 h2 {
+    top: -55px;
+    left: 390px;
+  }
+  .art .content-2 .fractal-3 {
+    width: 300px;
+    top: 430px;
+    z-index: 12;
+  }
+  .art .content p, .art .content button {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+  .art .content img:first-child {
+    border-radius: 15px;
+  }
+  .art .content p {
+    width: 400px;
+    z-index: 15;
+  }
+}
+
+@media (max-width: 768px) {
+  .art .content-1 h2 {
+    position: relative;
+    top: -670px;
+    left: initial;
+  }
+  .art .content-1 p {
+    top: -80px;
+    z-index: 15;
+  }
+  .art .content-1 button {
+    top: -70px;
+  }
+  .art .content-1 .fractal-2 {
+    left: 0;
+  }
+  .art .content-2 h2 {
+    position: relative;
+    top: -670px;
+    left: initial;
+  }
+  .art .content-2 p {
+    top: 25px;
+    z-index: 15;
+  }
+  .art .content-2 button {
+    top: 20px;
+  }
+  .art .content-2 .fractal-3 {
+    left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .art .content img:first-child {
+    width: 320px;
+  }
+  .art .content p {
+    width: 320px;
+  }
+  .art .content-1 h2 {
+    top: -535px;
+  }
+  .art .content-1 .fractal-2 {
+    width: 250px;
+    left: 50px;
+    z-index: 12;
+    top: 350px;
+  }
+  .art .content-2 {
+    margin-top: 0;
+  }
+  .art .content-2 h2 {
+    top: -535px;
+  }
+  .art .content-2 .fractal-3 {
+    width: 250px;
+    left: 50px;
+    z-index: 12;
+    top: 350px;
   }
 }
 

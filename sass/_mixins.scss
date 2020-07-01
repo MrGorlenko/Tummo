@@ -216,6 +216,13 @@
         height: 67px;
     }
 
+    @media screen and (max-width: 768px){
+        width: 400px;
+    }
+    @media screen and (max-width: 460px){
+        width: 320px;
+    }
+
 }
 
 @mixin content{

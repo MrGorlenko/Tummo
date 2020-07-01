@@ -115,3 +115,147 @@
         }
     }
 }
+
+@media (max-width:992px){
+    .art{
+
+        .content-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                top: -55px;
+                left: 390px;
+            }
+
+            .fractal-2{
+                width: 300px;
+                top: 430px;
+                z-index: 12;
+            }
+        }
+
+        .content-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 120px;
+            h2{
+                top: -55px;
+                left: 390px;
+            }
+
+            .fractal-3{
+                width: 300px;
+                top: 430px;
+                z-index: 12;
+            }
+        }
+
+        .content{
+             p, button {
+                position: relative;
+                left: auto;
+                right: auto;
+                top: auto;
+            }
+
+            img:first-child{
+                border-radius: 15px;
+            }
+            p{
+                width: 400px;
+                z-index: 15;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .art{
+        .content-1{
+            h2{
+                position: relative;
+                top: -670px;
+                left: initial;
+            }
+            p{
+                top: -80px;
+                z-index: 15;
+            }
+            button{
+                top: -70px;
+            }
+
+            .fractal-2{
+                left: 0;
+            }
+
+        }
+
+        .content-2{
+            h2{
+                position: relative;
+                top: -670px;
+                left: initial;
+            }
+            p{
+                top: 25px;
+                z-index: 15;
+            }
+            button{
+                top: 20px;
+            }
+
+            .fractal-3{
+                left: 0;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 460px){
+    .art{
+        .content{
+            img:first-child{
+                width: 320px;
+            }
+
+            p{
+                width: 320px;
+            }
+        }
+
+        .content-1{
+            h2{
+                top: -535px;
+            }
+
+            .fractal-2{
+                width: 250px;
+                left: 50px;
+                // top: -541px;
+                z-index: 12;
+                top:350px;
+            }
+        }
+
+        .content-2{
+            margin-top: 0;
+            h2{
+                top: -535px;
+            }
+
+            .fractal-3{
+                width: 250px;
+                left: 50px;
+                // top: -541px;
+                z-index: 12;
+                top:350px;
+            }
+        }
+
+    }
+}
