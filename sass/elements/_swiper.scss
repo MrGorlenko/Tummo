@@ -34,5 +34,36 @@
 .swiper-wrapper{
     margin-top: 85px;
 
+}
 
+@media (max-width: 992px){
+    .scrollbar{
+        display: none;
+    }
+
+    .swiper-container{
+        top: auto;
+        .content{
+            width: 85%;
+        }
+    }
+
+    .swiper-wrapper{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 576px){
+    .swiper-container{
+        width: 79%;
+        margin-left: 20% !important;
+    }
+
+    .swiper-container .content-wrapper{
+        height: 190px;
+    }
+
+    .content-wrapper{
+        width: 120px !important;
+    }
 }

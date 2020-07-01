@@ -16,7 +16,7 @@ $(document).ready(function(){
         direction: 'horizontal',
         loop: false,
         spaceBetween: 20,
-        slidesPerView: 4,
+        slidesPerView: 2,
         grabCursor: true,
 
         pagination: {
@@ -34,6 +34,11 @@ $(document).ready(function(){
           el: '.swiper-scrollbar',
           draggable: true
         },
+        breakpoints:{
+          992: {
+            slidesPerView: 4,
+          }
+        }
       })
 
     $('.burger').click(function(){
