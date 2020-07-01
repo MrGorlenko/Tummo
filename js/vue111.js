@@ -6,8 +6,8 @@ var arr = new Vue({
         price:2400,
         count:1,
         total: 0,
-        modalState: 'modal-passive',
-        // modalState: 'modal-active'
+        // modalState: 'modal-passive',
+        modalState: 'modal-active'
     },
     methods:{
         addItem: function(){
