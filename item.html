@@ -94,9 +94,78 @@
                         <h2 class="title">Кулоны</h2>
                         <img class='fractal' src="img/fractal-full.svg" alt="">
                     </div>
-                    <div class="col-6 content content-2">
+                    <div class=" content content-2">
                         <p class="paragraph click">Нажмите на товарную позицию, что бы узнать больше.</p>
-                        <div v-on:click='callModal' class="box"><img src="img/item-1.png" alt="">
+                        <!-- Slider main container -->
+                        <div class="swiper-container-2">
+
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper captivity">
+                            <!-- Slides -->
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div v-on:click='callModal' class="box"><img src="img/item-2.png" alt="">
+                                        <span>Jewerly as Art</span>
+                                        <p class="paragraph">2 400 $</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev backward"></div>
+                        <div class="swiper-button-next forward"></div>
+
+
+                        <!-- <div v-on:click='callModal' class="box"><img src="img/item-1.png" alt="">
                             <span>Jewerly as Art</span>
                             <p class="paragraph">2 400 $</p>
                         </div>
@@ -107,7 +176,7 @@
                         <div v-on:click='callModal' class="box"><img src="img/item-3.png" alt="">
                             <span>Jewerly as Art</span>
                             <p class="paragraph">2 400 $</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -184,7 +253,7 @@
                         <button v-on:click="removeItem" class="down"><img src="img/minus.svg" alt=""></button>
                     </div>
     
-                    <button v-on:click='buyItem' class="button">Купить</button>
+                    <button v-on:click='buyItem(); removeModal()' class="button">Купить</button>
                 </div>
             </div>
             </div>

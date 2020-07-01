@@ -5,7 +5,9 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 50px;
+    // margin-top: 50px;
+    margin-top: -25px;
+    width: 215px;
 
     cursor: pointer;
 
@@ -23,6 +25,21 @@
         img{
             opacity: .8;
             transition: opacity .5s ease;
+        }
+    }
+}
+
+
+@media (max-width: 1300px){
+    .box{
+        width: 180px;
+    }
+}
+
+@media (max-width: 1200px){
+    .box{
+        span{
+            margin-top: 20px;
         }
     }
 }

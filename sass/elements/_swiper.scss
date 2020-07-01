@@ -27,6 +27,71 @@
 
 }
 
+.item-1{
+
+    .swiper-button-prev{
+        content: url('../../img/backward.svg') !important;
+        outline: none;
+    }
+
+    .swiper-button-next{
+        content: url('../../img/forward.svg') !important;
+        outline: none;
+    }
+
+    .backward{
+        top: inherit;
+        bottom: 250px;
+        left: -135px;
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .forward{
+        top: inherit;
+        bottom: 250px;
+        right: 0px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.swiper-container-2 {
+    margin-right: 0 !important;
+    height: 80%;
+    width: 700px;
+
+    top: 365px;
+    // left: -25px;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    .content-wrapper{
+        @include content-wrapper;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .content{
+        @include content;
+    }
+
+    .swiper-scrollbar-drag{
+        background: #BDA367 !important;
+    }
+
+    .box{
+        margin-right: 20px;
+    }
+
+}
+
 .scrollbar{
     bottom: auto !important;
 }
@@ -34,6 +99,43 @@
 .swiper-wrapper{
     margin-top: 85px;
 
+}
+
+@media (max-width: 1500px){
+    .swiper-container-2{
+        top: 295px;
+    }
+
+}
+
+@media (max-width: 1300px){
+    .swiper-container-2{
+        width: 600px;
+        left:0;
+    }
+}
+
+@media (max-width: 1200px){
+    .swiper-container-2{
+        top: 189px;
+    }
+
+    .item-1{
+    
+        .forward{
+            bottom: 200px;
+            right: -50px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .backward{
+            bottom: 200px;
+            left: -80px;
+            width: 60px;
+            height: 60px;
+        }
+    }
 }
 
 @media (max-width: 992px){

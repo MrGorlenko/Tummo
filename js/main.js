@@ -41,6 +41,36 @@ $(document).ready(function(){
         }
       })
 
+      var mySwiper = new Swiper ('.swiper-container-2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 3,
+        // grabCursor: true,
+
+        // pagination: {
+        //   el: '.swiper-pagination',
+        //   clickable: true,
+        //   progressbarOpposite: true,
+        // },
+    
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        //   draggable: true
+        // },
+        // breakpoints:{
+        //   992: {
+        //     slidesPerView: 4,
+        //   }
+        // }
+      })
+
     $('.burger').click(function(){
         $('.main-menu').removeClass('menu-none')
     })

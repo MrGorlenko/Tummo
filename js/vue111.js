@@ -6,7 +6,7 @@ var arr = new Vue({
         price:2400,
         count:1,
         total: 0,
-        modalState: 'modal-passive'
+        modalState: 'modal-passive',
     },
     methods:{
         addItem: function(){
@@ -26,11 +26,14 @@ var arr = new Vue({
         },
         removeModal: function(){
             this.modalState = 'modal-passive'
+            this.count = 1
+            this.price = 2400
         },
         callModal: function(){
             this.modalState = 'modal-active'
         },
         buyItem: function() {
+
             this.amount += this.count
             this.total += this.price
         }
