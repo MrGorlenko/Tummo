@@ -130,7 +130,7 @@
     .world{
 
         h2{
-            left: -90px;
+            left: -45px;
         }
 
         p{
@@ -148,6 +148,12 @@
         }
 
         .pictures{
+
+            img:first-child{
+                width: 170px;
+                top: 37px;
+            }
+
             .fractals{
                 width: 200px;
                 bottom: 120px;

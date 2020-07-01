@@ -1442,7 +1442,7 @@ body {
 
 @media (max-width: 460px) {
   .world h2 {
-    left: -90px;
+    left: -45px;
   }
   .world p {
     position: relative;
@@ -1453,6 +1453,10 @@ body {
   }
   .world h2 {
     position: relative;
+  }
+  .world .pictures img:first-child {
+    width: 170px;
+    top: 37px;
   }
   .world .pictures .fractals {
     width: 200px;
