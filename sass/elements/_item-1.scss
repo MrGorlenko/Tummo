@@ -1,7 +1,29 @@
 @import '../mixins';
 
+.item-1-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s ease;
+}
+
+.item-none{
+    opacity: 0;
+    z-index: -2;
+    transition: opacity .3s ease;
+}
+
+.item-1-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s ease;
+}
+
 .item-1{
+    position: relative;
     overflow: hidden;
+    height: 850px;
     h2{
         position: absolute;
         top:140px;
@@ -76,6 +98,7 @@
 @media (max-width: 1200px){
     .item-1{
 
+        height: 650px;
         h2{
             top: 70px;
             left: 185px;

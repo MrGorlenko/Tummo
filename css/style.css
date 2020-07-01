@@ -1032,8 +1032,30 @@ body {
   }
 }
 
+.item-1-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity .3s ease;
+}
+
+.item-none {
+  opacity: 0;
+  z-index: -2;
+  transition: opacity .3s ease;
+}
+
+.item-1-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity .3s ease;
+}
+
 .item-1 {
+  position: relative;
   overflow: hidden;
+  height: 850px;
 }
 
 .item-1 h2 {
@@ -1110,6 +1132,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .item-1 {
+    height: 650px;
+  }
   .item-1 h2 {
     top: 70px;
     left: 185px;
@@ -1129,7 +1154,29 @@ body {
   }
 }
 
+.item-2-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity .3s ease;
+}
+
+.item-none {
+  opacity: 0;
+  z-index: -2;
+  transition: opacity .3s ease;
+}
+
+.item-2-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity .3s ease;
+}
+
 .item-2 {
+  height: 850px;
+  position: relative;
   margin-bottom: 50px;
 }
 
@@ -1214,6 +1261,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .item-2 {
+    height: 650px;
+  }
   .item-2 h2 {
     top: 70px;
     right: 185px;
@@ -1514,6 +1564,36 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #FFFEF6;
+}
+
+.switcher {
+  width: 522px;
+  height: 81px;
+  display: flex;
+  position: absolute;
+  top: 730px;
+  left: 280px;
+}
+
+.switcher button {
+  outline: none;
+  width: 50%;
+  border: 1px solid #715841;
+  background-color: #FFFEF6;
+  transition: background-color .3s ease;
+}
+
+.switcher button:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.switcher button:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.switcher .act {
+  background-color: rgba(192, 166, 108, 0.3);
+  transition: background-color .3s ease;
 }
 
 .hero__line {
