@@ -34,8 +34,23 @@ body {
     font-weight: 300;
     font-size: 60px;
     line-height: 75px;
-    width: 600px;
+    width: 480px;
     letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    width: 300px;
+    font-size: 40px;
   }
 }
 
@@ -52,6 +67,20 @@ body {
   .paragraph {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .paragraph {
+    line-height: 38px !important;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .paragraph {
+    line-height: 34px !important;
+    font-size: 16px;
   }
 }
 
@@ -104,6 +133,35 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  header {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+  .art, .silk, .section-gallery, .footer {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding-top: 30px;
+  }
+  header img {
+    width: 120px;
+  }
+}
+
+.mobile-break-line {
+  display: contents;
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-break-line {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: "OratorW01-Medium";
   src: url("//db.onlinewebfonts.com/t/daf8c1a0f06e7a24d9dca48b9d88dac0.eot");
@@ -126,6 +184,15 @@ body {
   background: #BEA468;
   color: #BEA468;
   border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  .burger {
+    height: 14px;
+  }
+  .burger span {
+    width: 30px;
+  }
 }
 
 .line-active {
@@ -267,6 +334,12 @@ body {
     bottom: -84px;
     left: 27px;
     width: 34px;
+  }
+}
+
+@media (max-width: 992px) {
+  .line {
+    display: none;
   }
 }
 
@@ -418,6 +491,25 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .menu ul {
+    height: 115%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu ul {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu ul {
+    width: 290px;
+  }
+}
+
 .menu ul li {
   list-style-type: none;
   position: relative;
@@ -430,6 +522,12 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #FFFEF6;
+}
+
+@media (max-width: 992px) {
+  .menu ul li a {
+    font-size: 17px;
+  }
 }
 
 .menu ul li:after {
@@ -451,6 +549,13 @@ body {
 @media screen and (max-width: 1250px) {
   .menu ul li:after {
     width: 65px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .menu ul li:after {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -525,6 +630,144 @@ body {
 @media (max-width: 1200px) {
   .menu img {
     top: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    height: 136px;
+  }
+  .menu ul li:after {
+    top: 7px;
+  }
+  .menu ul li:first-child:after {
+    left: 105px;
+  }
+  .menu ul li:nth-child(2):after {
+    left: 83px;
+  }
+  .menu ul li:nth-child(3):after {
+    left: 93px;
+  }
+  .menu ul li:nth-child(4):after {
+    left: 73px;
+  }
+  .menu ul li:nth-child(5):after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu .close {
+    right: 20px;
+    top: 25px;
+  }
+  .menu ul {
+    flex-wrap: wrap;
+    height: 90%;
+    margin-top: 2%;
+  }
+  .menu ul li {
+    width: 100px;
+  }
+  .menu ul li:after {
+    display: none;
+  }
+  .menu ul li:first-child:after {
+    left: 105px;
+  }
+  .menu ul li:nth-child(2):after {
+    left: 83px;
+  }
+  .menu ul li:nth-child(3):after {
+    left: 93px;
+  }
+  .menu ul li:nth-child(4):after {
+    left: 73px;
+  }
+  .menu ul li:nth-child(5):after {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu .close {
+    width: 20px;
+    top: 43px;
+    right: 26px;
+  }
+  .menu ul li:after {
+    display: block;
+  }
+  .menu ul li:first-child:after {
+    left: 115px;
+  }
+  .menu ul li:nth-child(2):after {
+    left: 90px;
+  }
+  .menu ul li:nth-child(3):after {
+    left: 105px;
+  }
+  .menu ul li:nth-child(4):after {
+    left: 85px;
+  }
+  .menu ul li:nth-child(5):after {
+    display: block;
+    left: 85px;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu .close {
+    width: 20px;
+    top: 43px;
+    right: 26px;
+  }
+  .menu ul li:after {
+    display: none;
+  }
+  .menu ul li:first-child:after {
+    left: 115px;
+  }
+  .menu ul li:nth-child(2):after {
+    left: 90px;
+  }
+  .menu ul li:nth-child(3):after {
+    left: 105px;
+  }
+  .menu ul li:nth-child(4):after {
+    left: 85px;
+  }
+  .menu ul li:nth-child(5):after {
+    display: none;
+    left: 85px;
+  }
+}
+
+@media (max-width: 325px) {
+  .menu .close {
+    width: 20px;
+    top: 43px;
+    right: 26px;
+  }
+  .menu ul li:after {
+    display: none;
+  }
+  .menu ul li:first-child:after {
+    left: 115px;
+  }
+  .menu ul li:nth-child(2):after {
+    left: 90px;
+  }
+  .menu ul li:nth-child(3):after {
+    left: 105px;
+  }
+  .menu ul li:nth-child(4):after {
+    left: 85px;
+  }
+  .menu ul li:nth-child(5):after {
+    display: none;
+    left: 85px;
   }
 }
 
@@ -809,6 +1052,20 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .modal p {
+    line-height: 38px !important;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .modal p {
+    line-height: 34px !important;
+    font-size: 16px;
+  }
+}
+
 .modal .info {
   display: flex;
   justify-content: space-between;
@@ -912,8 +1169,23 @@ body {
     font-weight: 300;
     font-size: 60px;
     line-height: 75px;
-    width: 600px;
+    width: 480px;
     letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    width: 300px;
+    font-size: 40px;
   }
 }
 
@@ -949,8 +1221,23 @@ body {
     font-weight: 300;
     font-size: 60px;
     line-height: 75px;
-    width: 600px;
+    width: 480px;
     letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 992px) {
+  .hero h1 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 768px) {
+  .hero h1 {
+    width: 300px;
+    font-size: 40px;
   }
 }
 
@@ -960,6 +1247,59 @@ body {
   }
   .hero .bird {
     width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 805px;
+  }
+  .hero__line {
+    display: none;
+  }
+  .hero .bird {
+    width: 100%;
+  }
+  .hero button {
+    left: 335px;
+    top: 330px;
+  }
+}
+
+@media (max-width: 765px) {
+  .hero__line {
+    display: none;
+  }
+  .hero .bird {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+  }
+  .hero h1 {
+    position: relative;
+    margin: auto;
+    left: 0;
+  }
+  .hero button {
+    left: 335px;
+    top: 330px;
+    position: relative;
+    margin: auto;
+    left: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 500px;
+  }
+  .hero h1 {
+    top: 40px;
+  }
+  .hero button {
+    top: 200px;
   }
 }
 
@@ -993,6 +1333,91 @@ body {
     font-size: 16px;
     line-height: 26px;
     width: 445px;
+  }
+}
+
+@media (max-width: 992px) {
+  .world {
+    height: 415px;
+  }
+  .world h2 {
+    text-align: end;
+    width: 290px;
+  }
+  .world p {
+    width: 460px;
+    top: 204px;
+    left: 227px;
+  }
+  .world .container-md {
+    height: 110%;
+  }
+  .world .pictures img:first-child {
+    width: 75%;
+  }
+  .world .pictures .fractals {
+    bottom: 60px;
+    left: -100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .world {
+    height: 415px;
+  }
+  .world h2 {
+    text-align: end;
+    width: 290px;
+    top: 25px;
+    left: 100px;
+  }
+  .world p {
+    width: 460px;
+    top: 165px;
+    left: 127px;
+  }
+  .world .container-md {
+    height: 110%;
+  }
+  .world .pictures img:first-child {
+    width: 200px;
+  }
+  .world .pictures .fractals {
+    bottom: 60px;
+    left: -100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .world p {
+    position: relative;
+    left: 0;
+    top: 40px;
+  }
+  .world h2 {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .world h2 {
+    left: -90px;
+  }
+  .world p {
+    position: relative;
+    left: 0;
+    top: 40px;
+    width: 180%;
+    font-size: 12px;
+  }
+  .world h2 {
+    position: relative;
+  }
+  .world .pictures .fractals {
+    width: 200px;
+    bottom: 120px;
+    left: -150%;
   }
 }
 

@@ -16,3 +16,12 @@
         border-radius: 5px;
     }
 }
+
+@media (max-width: 576px){
+    .burger{
+        height: 14px;
+        span{
+            width: 30px;
+        }
+    }
+}
