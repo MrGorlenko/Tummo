@@ -48,8 +48,6 @@
 @media (max-width:460px){
     .footer{
         height: 130px;
-        // position: relative;
-
         input, button{
             width: 270px;
             height: 40px;
@@ -65,9 +63,14 @@
         }
         button{
             bottom: 20px;
-            // display: block;
-            // justify-content: flex-start;
-            // padding-left: 33px;
+        }
+    }
+}
+
+@media (max-width:340px){
+    .footer{
+        input, button{
+            width: 230px;
         }
     }
 }

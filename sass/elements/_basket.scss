@@ -66,3 +66,34 @@
         }
     }
 }
+
+@media (max-width: 992px){
+    .basket{
+        .content{
+            width: 500px;
+
+            button{
+                left: 270px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .basket{
+        .content{
+            width: 300px;
+            img{
+                left: 30px;
+            }
+
+            span{
+                left: 80px;
+            }
+
+            button{
+                left: 130px;
+            }
+        }
+    }
+}

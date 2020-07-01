@@ -45,26 +45,39 @@ $(document).ready(function(){
         // Optional parameters
         direction: 'horizontal',
         loop: false,
-        spaceBetween: 20,
-        slidesPerView: 3,
+        spaceBetween: 0,
+        slidesPerView: 2,
     
         navigation: {
           nextEl: '.forward',
           prevEl: '.backward',
         },
+        
+        breakpoints:{
+          992: {
+            slidesPerView: 3,
+          }
+        }
+
       })
 
       var mySwiper3 = new Swiper ('.swiper-container-3', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
-        spaceBetween: 20,
-        slidesPerView: 3,
+        spaceBetween: 0,
+        slidesPerView: 2,
     
         navigation: {
           nextEl: '.forward-2',
           prevEl: '.backward-2',
         },
+
+        breakpoints:{
+          992: {
+            slidesPerView: 3,
+          }
+        }
       })
 
     $('.burger').click(function(){

@@ -681,8 +681,41 @@ body {
   .swiper-container .content {
     width: 85%;
   }
+  .swiper-container-2 {
+    position: relative;
+    margin: auto;
+    margin-right: auto !important;
+    top: -75px;
+  }
+  .swiper-container-3 {
+    position: relative;
+    margin: auto;
+    margin-right: auto !important;
+    top: -75px;
+  }
   .swiper-wrapper {
     margin-top: 150px;
+  }
+  .item-1 .forward {
+    display: none;
+  }
+  .item-1 .backward {
+    display: none;
+  }
+  .item-2 .backward-2 {
+    display: none;
+  }
+  .item-2 .forward-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-container-2 {
+    width: 320px;
+  }
+  .swiper-container-3 {
+    width: 320px;
   }
 }
 
@@ -696,6 +729,12 @@ body {
   }
   .content-wrapper {
     width: 120px !important;
+  }
+  .swiper-container-2 {
+    width: 100%;
+  }
+  .swiper-container-3 {
+    width: 100%;
   }
 }
 
@@ -1154,6 +1193,44 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .item-1 {
+    height: 1050px;
+  }
+  .item-1 h2 {
+    top: -480px;
+    margin: auto;
+    left: initial;
+    position: relative;
+    width: 170px;
+  }
+  .item-1 .content-1 img {
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+  .item-1 .content-1 .fractal {
+    right: 156px;
+  }
+  .item-1 .content-2 {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  .item-1 .content-2 .click {
+    position: relative;
+    top: -15px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-1 .content-1 .fractal {
+    right: 70px;
+  }
+}
+
 .item-2-1 {
   position: absolute;
   top: 0;
@@ -1286,6 +1363,48 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .item-2 {
+    height: 1050px;
+  }
+  .item-2 h2 {
+    top: -480px;
+    margin: auto;
+    left: initial;
+    right: initial;
+    position: relative;
+    width: 170px;
+    width: 220px;
+  }
+  .item-2 .content-1 {
+    display: block;
+  }
+  .item-2 .content-1 img {
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+  .item-2 .content-1 .fractal {
+    right: 156px;
+  }
+  .item-2 .content-2 .click {
+    position: relative;
+    top: -15px;
+    margin: auto;
+  }
+  .item-2 .row {
+    flex-wrap: wrap-reverse;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-2 .content-2 {
+    width: 100%;
+  }
+}
+
 .box {
   display: flex;
   flex-direction: column;
@@ -1325,6 +1444,12 @@ body {
 @media (max-width: 1200px) {
   .box span {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+    width: 280px;
   }
 }
 
@@ -1566,6 +1691,30 @@ body {
   color: #FFFEF6;
 }
 
+@media (max-width: 992px) {
+  .basket .content {
+    width: 500px;
+  }
+  .basket .content button {
+    left: 270px;
+  }
+}
+
+@media (max-width: 768px) {
+  .basket .content {
+    width: 300px;
+  }
+  .basket .content img {
+    left: 30px;
+  }
+  .basket .content span {
+    left: 80px;
+  }
+  .basket .content button {
+    left: 130px;
+  }
+}
+
 .switcher {
   width: 522px;
   height: 81px;
@@ -1594,6 +1743,40 @@ body {
 .switcher .act {
   background-color: rgba(192, 166, 108, 0.3);
   transition: background-color .3s ease;
+}
+
+@media (max-width: 1300px) {
+  .switcher {
+    top: 615px;
+    left: 230px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .switcher {
+    width: 450px;
+    height: 60px;
+    top: 500px;
+    left: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .switcher {
+    position: relative;
+    top: 200px;
+    margin: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .switcher {
+    width: 320px;
+  }
+  .switcher button {
+    line-height: 25px !important;
+  }
 }
 
 .hero__line {
@@ -2327,6 +2510,12 @@ body {
   }
 }
 
+@media (max-width: 340px) {
+  .footer input, .footer button {
+    width: 230px;
+  }
+}
+
 .story h1 {
   position: absolute;
   top: 282px;
@@ -2341,6 +2530,22 @@ body {
   }
   .story img {
     width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .story {
+    height: 500px;
+  }
+  .story img {
+    display: none;
+  }
+  .story h1 {
+    position: relative;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

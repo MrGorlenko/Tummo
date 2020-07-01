@@ -32,3 +32,38 @@
 
     }
 }
+
+@media (max-width: 1300px){
+    .switcher{
+        top: 615px;
+        left: 230px;
+    }
+}
+
+@media (max-width: 1200px){
+    .switcher{
+        width: 450px;
+        height: 60px;
+
+        top: 500px;
+        left: 150px;
+    }
+}
+
+@media (max-width: 992px){
+    .switcher{
+        position: relative;
+        top: 200px;
+        margin: auto;
+        left: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .switcher{
+        width: 320px;
+        button{
+            line-height: 25px !important;
+        }
+    }
+}
