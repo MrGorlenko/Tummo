@@ -57,7 +57,73 @@
     }
 }
 
+
+.item-2{
+
+    .swiper-button-prev{
+        content: url('../../img/backward.svg') !important;
+        outline: none;
+    }
+
+    .swiper-button-next{
+        content: url('../../img/forward.svg') !important;
+        outline: none;
+    }
+
+    .backward-2{
+        top: inherit;
+        bottom: 250px;
+        left: -135px;
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .forward-2{
+        top: inherit;
+        bottom: 250px;
+        right: -135px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
 .swiper-container-2 {
+    margin-right: 0 !important;
+    height: 80%;
+    width: 700px;
+
+    top: 365px;
+    // left: -25px;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    .content-wrapper{
+        @include content-wrapper;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .content{
+        @include content;
+    }
+
+    .swiper-scrollbar-drag{
+        background: #BDA367 !important;
+    }
+
+    .box{
+        margin-right: 20px;
+    }
+
+}
+
+.swiper-container-3 {
     margin-right: 0 !important;
     height: 80%;
     width: 700px;
@@ -106,12 +172,36 @@
         top: 295px;
     }
 
+    .swiper-container-3{
+        top: 295px;
+    }
+
 }
 
 @media (max-width: 1300px){
     .swiper-container-2{
         width: 600px;
         left:0;
+    }
+
+    .item-2{
+    
+        .backward-2{
+            top: inherit;
+            bottom: 250px;
+            left: -85px;
+            width: 80px;
+            height: 80px;
+    
+        }
+    
+        .forward-2{
+            top: inherit;
+            bottom: 250px;
+            right: -55px;
+            width: 80px;
+            height: 80px;
+        }
     }
 }
 
@@ -134,6 +224,37 @@
             left: -80px;
             width: 60px;
             height: 60px;
+        }
+    }
+
+    .item-2{
+    
+        .backward-2{
+            top: inherit;
+            bottom: 250px;
+            left: -85px;
+            width: 60px;
+            height: 60px;
+    
+        }
+    
+        .forward-2{
+            top: inherit;
+            bottom: 250px;
+            right: -55px;
+            width: 60px;
+            height: 60px;
+        }
+
+
+    }
+
+    .swiper-container-3 {
+        top: 185px;
+        width: 600px;
+        right: 0;
+        .swiper-slide{
+            width: 180px;
         }
     }
 }

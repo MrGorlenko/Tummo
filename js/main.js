@@ -11,7 +11,7 @@ $(document).ready(function(){
     delay: (el, i) => 150 * (i+1)
     })
 
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper1 = new Swiper ('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
@@ -41,34 +41,30 @@ $(document).ready(function(){
         }
       })
 
-      var mySwiper = new Swiper ('.swiper-container-2', {
+      var mySwiper2 = new Swiper ('.swiper-container-2', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
         spaceBetween: 20,
         slidesPerView: 3,
-        // grabCursor: true,
-
-        // pagination: {
-        //   el: '.swiper-pagination',
-        //   clickable: true,
-        //   progressbarOpposite: true,
-        // },
     
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.forward',
+          prevEl: '.backward',
         },
+      })
 
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        //   draggable: true
-        // },
-        // breakpoints:{
-        //   992: {
-        //     slidesPerView: 4,
-        //   }
-        // }
+      var mySwiper3 = new Swiper ('.swiper-container-3', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 3,
+    
+        navigation: {
+          nextEl: '.forward-2',
+          prevEl: '.backward-2',
+        },
       })
 
     $('.burger').click(function(){
