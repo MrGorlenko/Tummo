@@ -1602,7 +1602,7 @@ body {
 @media (max-width: 992px) {
   .modal {
     width: 320px;
-    height: 95vh;
+    height: 700px;
     overflow: visible;
   }
   .modal img {
@@ -1639,7 +1639,7 @@ body {
   }
   .modal .bottom-mobile {
     position: absolute;
-    bottom: 15px;
+    top: 280px;
     height: 420px;
     overflow: scroll;
   }
