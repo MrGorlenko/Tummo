@@ -26,6 +26,7 @@
 
     @media (max-width:992px){
         font-size: 17px;
+        // width: 50%;
     }
 
 }
@@ -53,7 +54,7 @@
     }
 
     @media screen and (max-width: 992px){
-        height: 115%;
+        height: 100%;
         width: 80%;
     }
     @media screen and (max-width: 768px){
@@ -79,10 +80,10 @@
         width: 65px;
     }
 
-    @media screen and (max-width:992px){
-        width: 10px;
-        height: 10px;
-    }
+    // @media screen and (max-width:992px){
+    //     width: 10px;
+    //     height: 10px;
+    // }
 }
 
 @mixin Krona{

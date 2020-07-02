@@ -793,7 +793,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .menu ul {
-    height: 115%;
+    height: 100%;
     width: 80%;
   }
 }
@@ -849,13 +849,6 @@ body {
 @media screen and (max-width: 1250px) {
   .menu ul li:after {
     width: 65px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .menu ul li:after {
-    width: 10px;
-    height: 10px;
   }
 }
 
@@ -934,140 +927,52 @@ body {
 }
 
 @media (max-width: 992px) {
+  .menu-wrapper {
+    height: 450px;
+  }
   .menu {
-    height: 136px;
+    height: 450px;
+    z-index: 25;
   }
-  .menu ul li:after {
-    top: 7px;
-  }
-  .menu ul li:first-child:after {
-    left: 105px;
-  }
-  .menu ul li:nth-child(2):after {
-    left: 83px;
-  }
-  .menu ul li:nth-child(3):after {
-    left: 93px;
-  }
-  .menu ul li:nth-child(4):after {
-    left: 73px;
-  }
-  .menu ul li:nth-child(5):after {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu .close {
+  .menu img {
+    top: 40px;
     right: 20px;
-    top: 25px;
+    width: 25px;
   }
   .menu ul {
+    padding-left: 60px;
     flex-wrap: wrap;
-    height: 90%;
-    margin-top: 2%;
+    align-items: initial;
+    justify-content: initial;
   }
   .menu ul li {
-    width: 100px;
+    width: 50%;
+  }
+  .menu ul li:nth-child(odd) {
+    margin-top: 50px;
+  }
+  .menu ul li:nth-child(even) {
+    margin-top: 130px;
   }
   .menu ul li:after {
-    display: none;
+    left: 0px;
+    top: 90px;
+    width: 111px;
   }
   .menu ul li:first-child:after {
-    left: 105px;
+    left: -19px;
   }
   .menu ul li:nth-child(2):after {
-    left: 83px;
+    left: -32px;
   }
   .menu ul li:nth-child(3):after {
-    left: 93px;
+    left: -19px;
   }
   .menu ul li:nth-child(4):after {
-    left: 73px;
+    display: none;
   }
   .menu ul li:nth-child(5):after {
     display: none;
-  }
-}
-
-@media (max-width: 576px) {
-  .menu .close {
-    width: 20px;
-    top: 43px;
-    right: 26px;
-  }
-  .menu ul li:after {
-    display: block;
-  }
-  .menu ul li:first-child:after {
-    left: 115px;
-  }
-  .menu ul li:nth-child(2):after {
-    left: 90px;
-  }
-  .menu ul li:nth-child(3):after {
-    left: 105px;
-  }
-  .menu ul li:nth-child(4):after {
-    left: 85px;
-  }
-  .menu ul li:nth-child(5):after {
-    display: block;
-    left: 85px;
-  }
-}
-
-@media (max-width: 360px) {
-  .menu .close {
-    width: 20px;
-    top: 43px;
-    right: 26px;
-  }
-  .menu ul li:after {
-    display: none;
-  }
-  .menu ul li:first-child:after {
-    left: 115px;
-  }
-  .menu ul li:nth-child(2):after {
-    left: 90px;
-  }
-  .menu ul li:nth-child(3):after {
-    left: 105px;
-  }
-  .menu ul li:nth-child(4):after {
-    left: 85px;
-  }
-  .menu ul li:nth-child(5):after {
-    display: none;
-    left: 85px;
-  }
-}
-
-@media (max-width: 325px) {
-  .menu .close {
-    width: 20px;
-    top: 43px;
-    right: 26px;
-  }
-  .menu ul li:after {
-    display: none;
-  }
-  .menu ul li:first-child:after {
-    left: 115px;
-  }
-  .menu ul li:nth-child(2):after {
-    left: 90px;
-  }
-  .menu ul li:nth-child(3):after {
-    left: 105px;
-  }
-  .menu ul li:nth-child(4):after {
-    left: 85px;
-  }
-  .menu ul li:nth-child(5):after {
-    display: none;
-    left: 85px;
   }
 }
 
