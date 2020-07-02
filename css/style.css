@@ -1602,7 +1602,7 @@ body {
 @media (max-width: 992px) {
   .modal {
     width: 320px;
-    height: 700px;
+    height: 600px;
     overflow: visible;
   }
   .modal img {
