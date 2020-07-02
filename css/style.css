@@ -1657,8 +1657,8 @@ body {
   .modal .info .counter .up {
     right: 7px;
     top: 0px;
-    width: 40px;
-    height: 35px;
+    width: 50px;
+    height: 40px;
   }
   .modal .info .counter .up img {
     height: 100%;
@@ -1666,7 +1666,7 @@ body {
   .modal .info .counter .down {
     right: 7px;
     width: 40px;
-    bottom: 0px;
+    width: 50px;
     height: 40px;
   }
   .modal .info .counter .down img {
@@ -1784,10 +1784,10 @@ body {
     width: 300px;
   }
   .basket .content img {
-    left: 30px;
+    left: 15px;
   }
   .basket .content span {
-    left: 80px;
+    left: 60px;
   }
   .basket .content button {
     left: 130px;
