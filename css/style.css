@@ -1630,8 +1630,8 @@ body {
     display: block;
   }
   .modal p {
-    line-height: 29px !important;
-    font-size: 16px;
+    line-height: 24px !important;
+    font-size: 15px;
   }
   .modal .top-mobile {
     position: absolute;
@@ -1640,7 +1640,8 @@ body {
   .modal .bottom-mobile {
     position: absolute;
     top: 280px;
-    height: 320px;
+    height: 305px;
+    padding-bottom: 15px;
     overflow: scroll;
   }
   .modal .info {
