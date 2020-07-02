@@ -129,14 +129,32 @@
 
 @media (max-width: 460px){
     .silk{
+        overflow: hidden;
+        margin-top: -70px;
+        height: 790px;
+        margin-bottom: 80px;
         .content{
+            align-items: flex-end;
+            padding-top: 50px;
             img:first-child{
                 width: 320px;
+                margin-right: -15px;
+            }
+
+            h2{
+                top: 0px;
             }
 
             p{
-                width: 320px;
+                width: 310px;
+                margin-left: 10px;
                 margin-top: 40px;
+            }
+
+
+
+            button{
+                margin: auto;
             }
 
             .fractal{

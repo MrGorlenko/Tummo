@@ -2137,24 +2137,36 @@ body {
 }
 
 @media (max-width: 992px) {
+  .art {
+    height: 1660px;
+    overflow: hidden;
+  }
   .art .content-1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
   .art .content-1 h2 {
     top: -55px;
     left: 390px;
   }
+  .art .content-1 button {
+    margin: auto;
+  }
   .art .content-1 .fractal-2 {
     width: 300px;
-    top: 430px;
+    top: 25px;
+    left: 250px;
     z-index: 12;
+  }
+  .art .content-1 img {
+    border-radius: 15px 0px 0px 15px;
+    margin-right: -15px;
   }
   .art .content-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 120px;
   }
   .art .content-2 h2 {
@@ -2166,14 +2178,18 @@ body {
     top: 430px;
     z-index: 12;
   }
+  .art .content-2 img {
+    border-radius: 0 15px 15px 0;
+    margin-left: -15px;
+  }
   .art .content p, .art .content button {
     position: relative;
     left: auto;
     right: auto;
     top: auto;
   }
-  .art .content img:first-child {
-    border-radius: 15px;
+  .art .content button {
+    margin: auto;
   }
   .art .content p {
     width: 400px;
@@ -2217,21 +2233,29 @@ body {
 @media (max-width: 460px) {
   .art {
     margin-bottom: 120px;
+    margin-top: -100px;
   }
   .art .content img:first-child {
     width: 320px;
   }
-  .art .content p {
-    width: 320px;
+  .art .content-1 {
+    padding-top: 50px;
   }
   .art .content-1 h2 {
     top: -535px;
   }
   .art .content-1 .fractal-2 {
     width: 250px;
-    left: 50px;
+    left: 250px;
+    top: 25px;
     z-index: 12;
-    top: 350px;
+  }
+  .art .content-1 p {
+    text-align: start;
+  }
+  .art .content-1 p {
+    width: 310px;
+    margin-left: 10px;
   }
   .art .content-2 {
     margin-top: 0;
@@ -2241,9 +2265,14 @@ body {
   }
   .art .content-2 .fractal-3 {
     width: 250px;
-    left: 50px;
+    left: -100px;
     z-index: 12;
-    top: 350px;
+    top: 50px;
+  }
+  .art .content-2 p {
+    text-align: end;
+    width: 310px;
+    margin-right: 10px;
   }
 }
 
@@ -2348,12 +2377,30 @@ body {
 }
 
 @media (max-width: 460px) {
+  .silk {
+    overflow: hidden;
+    margin-top: -70px;
+    height: 790px;
+    margin-bottom: 80px;
+  }
+  .silk .content {
+    align-items: flex-end;
+    padding-top: 50px;
+  }
   .silk .content img:first-child {
     width: 320px;
+    margin-right: -15px;
+  }
+  .silk .content h2 {
+    top: 0px;
   }
   .silk .content p {
-    width: 320px;
+    width: 310px;
+    margin-left: 10px;
     margin-top: 40px;
+  }
+  .silk .content button {
+    margin: auto;
   }
   .silk .content .fractal {
     width: 250px;
