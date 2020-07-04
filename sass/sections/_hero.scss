@@ -24,6 +24,7 @@
 
 @media (max-width: 1200px){
     .hero{
+        min-height: 750px;
         h1{
             @include KronaGiant;
            top: 65px;

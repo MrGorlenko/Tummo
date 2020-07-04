@@ -1826,6 +1826,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .hero {
+    min-height: 750px;
+  }
   .hero h1 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
