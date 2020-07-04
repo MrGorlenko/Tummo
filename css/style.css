@@ -6,6 +6,7 @@
 
 header {
   padding-top: 45px;
+  min-height: 150px;
 }
 
 body {
@@ -740,7 +741,7 @@ body {
 
 .menu-wrapper {
   overflow: hidden;
-  height: 150px;
+  min-height: 150px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -1761,6 +1762,10 @@ body {
   .switcher button {
     line-height: 25px !important;
   }
+}
+
+.hero {
+  min-height: 1111px;
 }
 
 .hero__line {

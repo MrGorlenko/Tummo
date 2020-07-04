@@ -1,6 +1,7 @@
 @import '../mixins';
 
 .hero{
+    min-height: 1111px;
     &__line{
         display: flex;
         align-items: flex-end;
