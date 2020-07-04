@@ -1885,7 +1885,7 @@ body {
 
 @media (max-width: 992px) {
   .hero {
-    height: 805px;
+    min-height: 805px;
   }
   .hero__line {
     display: none;
@@ -1900,6 +1900,9 @@ body {
 }
 
 @media (max-width: 765px) {
+  .hero {
+    min-height: 630px;
+  }
   .hero__line {
     display: none;
   }
@@ -1926,6 +1929,8 @@ body {
 
 @media (max-width: 576px) {
   .hero {
+    min-height: 400px;
+    max-height: 440px;
     height: 500px;
   }
   .hero h1 {
