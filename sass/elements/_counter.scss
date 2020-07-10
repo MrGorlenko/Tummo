@@ -1,0 +1,62 @@
+.counter-white{
+  border: 1px solid #FFFFFF;
+  span{
+    color: #FFFFFF;
+  }
+  .up{
+    right: 24px;
+    top: 14px;
+  }
+  .down{
+    bottom: 14px;
+    right: 24px;
+  }
+}
+
+.counter-black{
+  border: 1px solid #000;
+  span{
+    color: #000;
+  }
+  button{
+    font-size: 35px;
+  }
+
+  .up{
+    right: 15px;
+    top: -5px;
+  }
+  .down{
+    right: 18px;
+    bottom: -5px;
+  }
+}
+
+.counter{
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+
+  position: relative;
+
+  span{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+
+      position: absolute;
+      top: 17px;
+      left: 24px;
+  }
+
+  .up, .down{
+      position: absolute;
+      background: none;
+      border: none !important;
+      cursor: pointer;
+
+      outline: none;
+
+  }
+}

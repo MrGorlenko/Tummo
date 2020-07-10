@@ -1,7 +1,11 @@
 @import '../mixins';
 
+.basket-container{
+  margin-bottom: 50px;
+}
+
 .basket-global{
-  height: 1000px;
+  height: 100%;
   .line-gl{
     width: 90%;
     display: block;
@@ -17,7 +21,114 @@
     display: block;
 
     margin-top: 50px;
+    margin-bottom: 50px;
 
     @include Roboto-regular;
+  }
+
+  .info{
+
+    height: 300px;
+    border-top: 1px solid #715841;
+    border-bottom: 1px solid #715841;
+
+    margin-bottom: 30px;
+
+    p,h3,.counter{
+      position: absolute;
+      left: 260px;
+    }
+  
+    h3{
+      @include KronaMedium;
+      top: 0;
+    }
+  
+    p{
+      @include paragraph;
+      top: 100px;
+    }
+  
+    .counter{
+      top: 207px;
+    }
+
+    .price{
+      @include paragraph;
+
+      font-size: 34px;
+
+      position: absolute;
+      bottom: 0;
+      right: 45px;
+    }
+
+    img{
+      height: 280px;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+@media (max-width: 992px){
+  .basket-global{
+    .info{
+      height: initial;
+      img{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .basket-global{
+    .info{
+      img{
+        width: 150px;
+        height: 200px;
+      }
+      p,h3{
+        left: 180px;
+      }
+
+      .counter{
+        left: initial;
+        right: 30px;
+        top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px){
+  .basket-global{
+    .line-gl{
+      margin-top: 45px;
+    }
+    .info{
+      p{
+        display: none;
+      }
+
+      h3, .counter{
+        left: 160px;
+      }
+
+      img{
+        width: 130px;
+        height: 190px;
+      }
+
+      .counter{
+        right: auto;
+        top: 90px;
+      }
+
+      .price{
+        font-size: 25px;
+      }
+    }
   }
 }

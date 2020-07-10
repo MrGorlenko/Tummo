@@ -135,6 +135,39 @@
     }
 }
 
+@mixin KronaMedium{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 90px;
+    width: 625px;
+    letter-spacing: 6px;
+    color: #715841;
+    @media screen and (max-width: 1500px){
+        width: 500px;
+        letter-spacing: 4px;
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 1200px){
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 992px){
+        width: 300px;
+        line-height: 40px;
+        margin-top: 15px;
+    }
+
+    @media screen and (max-width: 576px){
+        width: 150px;
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+}
+
 @mixin Roboto-regular{
     font-family: Roboto;
     font-style: normal;
@@ -144,6 +177,31 @@
     
     color: #715841;
 }
+
+@mixin paragraph-bold{
+    font-family: Roboto;
+    // font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 38px;
+    color: #715841;
+
+    @media screen and (max-width: 1500px){
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    @media screen and (max-width: 992px){
+        line-height: 38px !important;
+        font-size: 18px ;
+    }
+
+    @media screen and (max-width: 460px){
+        line-height: 34px !important;
+        font-size: 18px ;
+    }
+}
+
 
 @mixin paragraph{
     font-family: Roboto;

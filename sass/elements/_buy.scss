@@ -1,0 +1,59 @@
+@mixin spc-btwn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span{
+    display: block;
+  }
+}
+
+.buy{
+  border: 1px solid #715841;
+  .final{
+    @include spc-btwn;
+    height: 80px;
+    border-bottom: 1px groove rgba(0,0,0,.1);
+    span{
+      @include paragraph;
+    }
+  }
+  .overall{
+    height: 40px;
+    @include spc-btwn;
+    span{
+      @include paragraph-bold;
+    }
+  }
+
+  .button{
+    width: 90%;
+
+    position: absolute;
+    bottom:20px;
+    left: 5%;
+
+    background-color: #BDA367;
+    color: white;
+  }
+}
+
+@media (max-width: 992px){
+  .buy{
+    height: 240px;
+  }
+}
+
+@media (max-width: 576px){
+  .buy{
+    .final{
+      span{
+        font-size: 20px;
+      }
+    }
+    .overall{
+      span{
+        font-size: 24px;
+      }
+    }
+  }
+}

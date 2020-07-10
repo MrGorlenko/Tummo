@@ -30,6 +30,8 @@
 
 </head>
 <body>
+
+  <div id='app'>
   
 
   <header id='hero'>
@@ -68,13 +70,59 @@
 
     <a class='back-link' href="#"> ← Продолжить покупки</a>
 
-    <div class="container-md">
-      <div class="row">
-        <div class="col-lg-8">
+    <div class="basket-container container-md">
+      <div class="row justify-content-between">
+        <div class="info col-lg-8">
           <img src="img/item-2.png" alt="">
-          
+          <h3>Кулон "on the cloud 9"</h3>
+          <p>Размер <br>
+          <span>10x10</span></p>
+          <div class="counter counter-black">
+            <span>{{count}}</span>
+            <button v-on:click="addItem" class="up">+</button>
+            <button v-on:click="removeItem" class="down">-</button>
+          </div>
+          <span class="price">2 400 $</span>
         </div>
-        <div class="col-lg-4"></div>
+
+        <div class="buy col-lg-3 order-last order-lg-0">
+          <div class="final">
+            <span>Итого</span>
+            <span>2 400 $</span>
+          </div>
+          <div class="overall">
+            <span>Всего</span>
+            <span>2 400 $</span>
+          </div>
+          <button class="button">Оформить</button>
+        </div>
+
+        <div class="info col-lg-8">
+          <img src="img/item-2.png" alt="">
+          <h3>Кулон "on the cloud 9"</h3>
+          <p>Размер <br>
+          <span>10x10</span></p>
+          <div class="counter counter-black">
+            <span>{{count}}</span>
+            <button v-on:click="addItem" class="up">+</button>
+            <button v-on:click="removeItem" class="down">-</button>
+          </div>
+          <span class="price">2 400 $</span>
+        </div>
+
+        <div class="info col-lg-8">
+          <img src="img/item-2.png" alt="">
+          <h3>Кулон "on the cloud 9"</h3>
+          <p>Размер <br>
+          <span>10x10</span></p>
+          <div class="counter counter-black">
+            <span>{{count}}</span>
+            <button v-on:click="addItem" class="up">+</button>
+            <button v-on:click="removeItem" class="down">-</button>
+          </div>
+          <span class="price">2 400 $</span>
+        </div>
+
       </div>
     </div>
 
@@ -90,6 +138,7 @@
       </div>
     </div>
   </footer>
+</div>
 
   <!-- ANIME -->
   <script src='libs/anime.min.js'></script>
@@ -109,8 +158,8 @@
   <script type="text/javascript" src="js/coockie.js"></script>
   <!-- COOCKIE -->
 
-  <script src='js/main.js'></script>
-  <script src='js/scroll.js'></script>
-  <script src='js/scrollmagic.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src='js/vue111.js'></script>
+  <script src='js/menu.js'></script>
 </body>
 </html>
