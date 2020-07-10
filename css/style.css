@@ -1385,8 +1385,8 @@ body {
 }
 
 .modal {
-  width: 1190px;
-  height: 360px;
+  width: 1190px !important;
+  height: 360px !important;
   background: #C0A66C;
   display: flex !important;
   z-index: 42;
@@ -1506,11 +1506,17 @@ body {
   right: 24px;
 }
 
+@media (max-width: 1200px) {
+  .modal {
+    width: 950px !important;
+  }
+}
+
 @media (max-width: 992px) {
   .modal {
-    width: 320px;
-    height: 600px;
-    overflow: visible;
+    width: 320px !important;
+    height: 600px !important;
+    overflow: visible !important;
   }
   .modal img {
     height: 250px;
@@ -2592,5 +2598,30 @@ body {
     right: 0;
     margin: auto;
   }
+}
+
+.basket-global {
+  height: 1000px;
+}
+
+.basket-global .line-gl {
+  width: 90%;
+  display: block;
+  margin: auto;
+  height: 2px;
+  margin-top: 100px;
+}
+
+.basket-global .back-link {
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #715841;
 }
 /*# sourceMappingURL=style.css.map */

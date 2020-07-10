@@ -29,8 +29,8 @@
 }
 
 .modal{
-    width: 1190px;
-    height: 360px;
+    width: 1190px !important;
+    height: 360px !important;
     background: #C0A66C;
 
     display: flex !important;
@@ -133,12 +133,18 @@
 
 }
 
+@media (max-width: 1200px){
+    .modal{
+        width: 950px !important;
+    }
+}
+
 @media (max-width: 992px){
     .modal{
-        width: 320px;
-        height: 600px;
+        width: 320px !important;
+        height: 600px !important;
 
-        overflow: visible;
+        overflow: visible !important;
 
         img{
             height: 250px;
