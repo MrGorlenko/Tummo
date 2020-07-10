@@ -1,0 +1,136 @@
+@mixin spc-btwn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span{
+    display: block;
+    font-size: 24px;
+  }
+}
+
+.buy-form{
+  h2{
+    margin: auto;
+    text-align: center;
+    @include KronaGiant;
+  }
+
+  .form{
+    h3{
+      @include KronaMedium;
+      background-color: #bda367;
+      letter-spacing: 1px !important;
+      text-align: center;
+      width: 100% !important;
+    }
+  }
+
+  form{
+
+    margin-bottom: 30px;
+
+    input{
+      display: block;
+      background-color: #fffef6;
+      border: 1px solid black;
+
+      width: 76%;
+      padding-left: 4%;
+      margin: auto;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    button{
+      width: 75%;
+      margin: auto;
+      display: block;
+      height: 50px;
+      background-color: #bda367;
+      color: white;
+    }
+  }
+
+  .delivery, .info{
+    h3{
+      opacity: .7;
+    }
+  }
+
+  .buy{
+    padding-left: 0;
+    padding-right: 0;
+    span{
+      padding-left: 30px;
+      font-size: 24px;
+    }
+    h3{
+      @include KronaMedium;
+      background-color: #bda367;
+      letter-spacing: 1px !important;
+      text-align: center;
+      width: 100% !important;
+    }
+
+    .info{
+      padding-left: 20px;
+      padding-right: 20px;
+      @include spc-btwn;
+    }
+
+    .info-bold{
+      padding-left: 20px;
+      padding-right: 20px;
+      @include spc-btwn;
+      span{
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+
+    p{
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+
+    .button{
+      bottom: 120px;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .buy-form{
+    .buy{
+      height: 450px;
+      margin-bottom: 50px;
+      span{
+        padding-left: 0;
+        padding-right: 0;
+      }
+      h3{
+        margin-top: 0;
+      }
+      .info{
+        padding-left: 5px;
+        padding-right: 5px;
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px){
+  .buy-form{
+    .buy{
+      height: 500px;
+      .button{
+        bottom: 180px;
+      }
+    }
+  }
+}

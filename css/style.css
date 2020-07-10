@@ -2943,4 +2943,251 @@ body {
     font-size: 25px;
   }
 }
+
+.buy-form h2 {
+  margin: auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 90px;
+  width: 843px;
+  letter-spacing: 6px;
+  color: #715841;
+}
+
+@media screen and (max-width: 1500px) {
+  .buy-form h2 {
+    width: 680px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .buy-form h2 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    width: 480px;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .buy-form h2 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buy-form h2 {
+    width: 300px;
+    font-size: 40px;
+  }
+}
+
+.buy-form .form h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 90px;
+  width: 625px;
+  letter-spacing: 6px;
+  color: #715841;
+  background-color: #bda367;
+  letter-spacing: 1px !important;
+  text-align: center;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 1500px) {
+  .buy-form .form h3 {
+    width: 500px;
+    letter-spacing: 4px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .buy-form .form h3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .buy-form .form h3 {
+    width: 300px;
+    line-height: 40px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .buy-form .form h3 {
+    width: 150px;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+}
+
+.buy-form form {
+  margin-bottom: 30px;
+}
+
+.buy-form form input {
+  display: block;
+  background-color: #fffef6;
+  border: 1px solid black;
+  width: 76%;
+  padding-left: 4%;
+  margin: auto;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.buy-form form button {
+  width: 75%;
+  margin: auto;
+  display: block;
+  height: 50px;
+  background-color: #bda367;
+  color: white;
+}
+
+.buy-form .delivery h3, .buy-form .info h3 {
+  opacity: .7;
+}
+
+.buy-form .buy {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.buy-form .buy span {
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+.buy-form .buy h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 90px;
+  width: 625px;
+  letter-spacing: 6px;
+  color: #715841;
+  background-color: #bda367;
+  letter-spacing: 1px !important;
+  text-align: center;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 1500px) {
+  .buy-form .buy h3 {
+    width: 500px;
+    letter-spacing: 4px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .buy-form .buy h3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .buy-form .buy h3 {
+    width: 300px;
+    line-height: 40px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .buy-form .buy h3 {
+    width: 150px;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+}
+
+.buy-form .buy .info {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-form .buy .info span {
+  display: block;
+  font-size: 24px;
+}
+
+.buy-form .buy .info-bold {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-form .buy .info-bold span {
+  display: block;
+  font-size: 24px;
+}
+
+.buy-form .buy .info-bold span {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.buy-form .buy p {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.buy-form .buy .button {
+  bottom: 120px;
+}
+
+@media (max-width: 992px) {
+  .buy-form .buy {
+    height: 450px;
+    margin-bottom: 50px;
+  }
+  .buy-form .buy span {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .buy-form .buy h3 {
+    margin-top: 0;
+  }
+  .buy-form .buy .info {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .buy-form .buy .info span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .buy-form .buy {
+    height: 500px;
+  }
+  .buy-form .buy .button {
+    bottom: 180px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
