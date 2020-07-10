@@ -213,7 +213,7 @@ body {
 
 .line {
   position: fixed;
-  bottom: 80px;
+  bottom: 120px;
   opacity: 1;
   z-index: 30;
   transition: opacity .3s ease;
@@ -2609,14 +2609,14 @@ body {
 }
 
 .footer {
-  height: 80px;
+  height: 120px;
   width: 100%;
   background: #BDA367;
 }
 
 .footer button {
   width: 165px;
-  height: 60px;
+  height: 50px;
   background: #FFFFFF;
   border: 1px solid #FFFEF6;
   box-sizing: border-box;
@@ -2638,7 +2638,7 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   width: 330px;
-  height: 60px;
+  height: 50px;
   padding-left: 33px;
   font-family: Roboto;
   font-style: normal;
@@ -2654,9 +2654,14 @@ body {
   position: relative;
 }
 
-.footer a {
+.footer__container a {
   position: absolute;
   left: 0;
+}
+
+.footer__container_2 a {
+  display: block;
+  color: white;
 }
 
 @media (max-width: 992px) {
@@ -2675,11 +2680,14 @@ body {
   .footer button {
     bottom: 20px;
   }
+  .footer__container_2 {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 460px) {
   .footer {
-    height: 130px;
+    height: 180px;
   }
   .footer input, .footer button {
     width: 270px;

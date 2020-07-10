@@ -313,7 +313,7 @@
 }
 
 @mixin footer{
-    height: 80px;
+    height: 120px;
     width: 100%;
     background: #BDA367;
 }
@@ -323,7 +323,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     width: 330px;
-    height: 60px;
+    height: 50px;
 
     padding-left: 33px;
 
@@ -339,7 +339,7 @@
 
 @mixin footer-button{
     width: 165px;
-    height: 60px;
+    height: 50px;
 
     background: #FFFFFF;
     border: 1px solid #FFFEF6;

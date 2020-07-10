@@ -14,11 +14,16 @@
 
     &__container{
         position: relative;
+        a{
+            position: absolute;
+            left:0;
+        }
     }
-
-    a{
-        position: absolute;
-        left:0;
+    &__container_2{
+        a{
+            display: block;
+            color: white;
+        }
     }
 }
 
@@ -42,12 +47,16 @@
             // justify-content: flex-start;
             // padding-left: 33px;
         }
+
+        &__container_2{
+            flex-direction: column;
+        }
     }
 }
 
 @media (max-width:460px){
     .footer{
-        height: 130px;
+        height: 180px;
         input, button{
             width: 270px;
             height: 40px;
